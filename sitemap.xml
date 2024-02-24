@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://BioRDM.github.io/fair-for-busy-biologists/01-OS-and-FAIR.html</loc>
+  </url>
+  <url>
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/01-introduction.html</loc>
   </url>
   <url>
@@ -20,6 +23,9 @@
   </url>
   <url>
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/index.html</loc>
+  </url>
+  <url>
+    <loc>https://BioRDM.github.io/fair-for-busy-biologists/instructor/01-OS-and-FAIR.html</loc>
   </url>
   <url>
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/instructor/01-introduction.html</loc>
@@ -58,6 +64,9 @@
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://BioRDM.github.io/fair-for-busy-biologists/instructor/xTemplate.html</loc>
+  </url>
+  <url>
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/instructor-notes.html</loc>
   </url>
   <url>
@@ -71,5 +80,8 @@
   </url>
   <url>
     <loc>https://BioRDM.github.io/fair-for-busy-biologists/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://BioRDM.github.io/fair-for-busy-biologists/xTemplate.html</loc>
   </url>
 </urlset>
