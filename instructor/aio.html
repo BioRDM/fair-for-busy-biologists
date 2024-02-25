@@ -643,7 +643,7 @@ being open:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>sensitive data (anonymising data from administrative health records
@@ -760,7 +760,7 @@ Reusable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li><p>Ref 17 will lead you to <a href="https://doi.org/10.1002/ana.24102" class="external-link">this paper</a>, which first of
@@ -807,7 +807,7 @@ data column.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ul>
 <li>Finding the right table and column containing the relevant data is
@@ -901,6 +901,86 @@ metabolomics data * <a href="https://github.com/" class="external-link">GitHub</
 code.</p>
 <p><em>We will cover repositories in more details in a later
 episode.</em></p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>What are persistent identifiers (PIDs)</h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>A persistent identifier is a long-lasting reference to a digital
+resource. Typically it has two components:</p>
+<ul>
+<li>a service that locates the resource over time even when its location
+changes</li>
+<li>and a unique identifier (that distinguishes the resource or concept
+from others).</li>
+</ul>
+<p>Persistent identifiers aim to solve the problem of the persistence of
+accessing cited resource, particularly in the field of academic
+literature. All too often, web addresses (links) changes over time and
+fail to take you to the referenced resource you expected.</p>
+<p>There are several services and technologies (schemes) that provide
+PIDs for objects (whether digital, physical or abstract). One of the
+most popular is <strong>Digital Object Identifier <a href="https://www.doi.org/" class="external-link">(DOI)</a></strong>, recognizable by the
+prefix doi.org in the web links. For example: <a href="https://doi.org/10.1038/sdata.2016.18" class="external-link">https://doi.org/10.1038/sdata.2016.18</a>
+resolves to the location of the paper that describes FAIR
+principles.</p>
+<p>Public repositories often maintain web addresses of their content in
+a stable form which follow the convention <a href="http://repository.adress/identifier" class="external-link uri">http://repository.adress/identifier</a>; these are often
+called permalinks. For well establish services, permalinks can be
+treated as PIDs.</p>
+<p>For example: <a href="http://identifiers.org/SO:0000167" class="external-link">http://identifiers.org/SO:0000167</a>
+resolves to a page defining promoter role, and can be used to annotate
+part of a DNA sequence as performing such a role during
+transcription.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="interoperable">Interoperable<a class="anchor" aria-label="anchor" href="#interoperable"></a>
+</h4>
+<ul>
+<li>Use common/free file formats (can be domain specific)</li>
+<li>Always use .csv or .xls files for numerical data.
+<strong>Never</strong> share data tables as word or pdf,</li>
+<li>Provide underlying numerical data for all plots and graphs</li>
+<li>Convert proprietary binary formats to the open ones. For example
+convert Snapgene to Genbank, microscopy multistack images to
+OME-TIFF</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="reusable">Reusable<a class="anchor" aria-label="anchor" href="#reusable"></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>
+<p>Describe your data well / provide good metadata</p>
+<ul>
+<li>write README file describing the data</li>
+<li>user descriptive column headers for the data tables</li>
+<li>tidy data tables, make them analysis friendly</li>
+<li>provide as many details as possible (prepare good metadata)</li>
+<li>use (meta)data formats (e.g. SBML, SBOL)</li>
+<li>follow Minimum Information Standards</li>
+</ul>
+</li>
+</ol>
+<p><em>Describing data well is the most challenging part of the data
+sharing process. We will cover this in more detail later on.</em></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Attach license files.</li>
+</ol>
+<p>Licenses explicitly declare conditions and terms by which data and
+software can be re-used. Here, we recommend:</p>
+<ul>
+<li>for data <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons
+Attribution (CC BY)</a> license,</li>
+<li>for code a permissive open source license such as the <a href="https://opensource.org/licenses/MIT" class="external-link">MIT</a>, <a href="https://opensource.org/licenses/BSD-2-Clause" class="external-link">BSD</a>, or <a href="http://www.apache.org/licenses/" class="external-link">Apache license</a>.</li>
+</ul>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
