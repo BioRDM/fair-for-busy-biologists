@@ -147,19 +147,12 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         1. Introduction to Open Science and FAIR principles
         </span>
-      </button>
+      
     </div><!--/div.accordion-header-->
-        
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#attribution">Attribution</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -231,7 +224,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to Open Science and FAIR principles</h1>
-        <p>Last updated on 2024-02-24 |
+        <p>Last updated on 2024-02-25 |
         
         <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/01-OS-and-FAIR.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -252,6 +245,8 @@
 <h3 class="card-title">Questions</h3>
 <ul><li>What is Open Science?</li>
 <li>How can I benefit from Open Science?</li>
+<li>What are the FAIR guidelines?</li>
+<li>Why being FAIR matters?</li>
 </ul></div>
 </div>
 </div>
@@ -264,6 +259,8 @@ motivations</li>
 <li>Explain the main benefits of Open Science</li>
 <li>Recognize the barriers and risks in the adoption of Open Science
 practices</li>
+<li>Recognize typical issues that prevent data re-use</li>
+<li>Understand the FAIR principles</li>
 </ul></div>
 </div>
 </div>
@@ -581,7 +578,7 @@ being open:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>sensitive data (anonymising data from administrative health records
 can be difficult)</li>
@@ -629,39 +626,60 @@ hosting and storage. For example, microscopy datasets reach sizes in
 terabytes, making such data accessible for 10 years involves serious
 financial commitment.</p>
 </div>
-<div class="section level3">
-<h3 id="where-to-next">Where to next<a class="anchor" aria-label="anchor" href="#where-to-next"></a></h3>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Further</span> reading/links:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Challenges <span class="kw">&amp;</span> <span class="ex">benefits</span> of OS]<span class="er">(</span><span class="ex">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246</span><span class="kw">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Centre for Open Science]<span class="er">(</span><span class="ex">https://www.cos.io/</span><span class="kw">)</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Ted talk supporting OS]<span class="er">(</span><span class="ex">https://www.youtube.com/watch?v=c-bemNZ-IqA</span><span class="kw">)</span></span></code></pre>
+<div class="section level1">
+<h1 id="being-fair">Being FAIR<a class="anchor" aria-label="anchor" href="#being-fair"></a></h1>
+<p>We have seen how Open practices can benefit both scientific community
+as a whole and individual practitioner. The wide adoption of Open Access
+principles has resulted in an easy access to recent biomedical
+publications. Unfortunately, the same cannot be said about data and
+software that accompanies those publications.</p>
+<div id="what-is-data" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout challenge">
+<div id="what-is-data" class="callout-inner">
+<h3 class="callout-title">What is data<a class="anchor" aria-label="anchor" href="#what-is-data"></a>
+</h3>
+<div class="callout-content">
+<p>Although scientific data is a very broad term, we still encounter
+groups who (wrongly) believe they do not have data! Data does not mean
+Excel files with recorded measurements from a machine. Data also
+includes:</p>
+<ul><li>images, not only from microscopes</li>
+<li>information about biological materials, like strain or patient
+details</li>
+<li>biological models</li>
+<li>recipes, laboratory and measurement protocols</li>
+<li>scripts, analysis procedures, and custom software can also be
+considered data</li>
+</ul><p>However, there are specific recommendations on how to deal with
+code.</p>
+</div>
+</div>
+</div>
+<p>Let’s have a look how challenging it can be to access and use data
+from published biological papers.</p>
+<div id="exercise-3-impossible-protocol-4-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout-inner">
-<h3 class="callout-title">Open Science and FAIR Quiz (5 min + runs over
-break)<a class="anchor" aria-label="anchor" href="#open-science-and-fair-quiz-5-min-runs-over-break"></a>
+<div id="exercise-3-impossible-protocol-4-min" class="callout-inner">
+<h3 class="callout-title">Exercise 3: Impossible protocol (4 min)<a class="anchor" aria-label="anchor" href="#exercise-3-impossible-protocol-4-min"></a>
 </h3>
 <div class="callout-content">
-<p>Which of the following statements about the OS movement are
-true/false?</p>
-<ul><li>Open Science relies strongly on the Internet</li>
-<li>Open Access eliminates publishing costs</li>
-<li>Open Data facilitates re-use</li>
-<li>Open Data can increases confidence in research findings</li>
-<li>In Open Peer Review, readers vote on publication acceptance</li>
-<li>Open Notebooks improve reproducibility</li>
-<li>Open Notebooks can create patenting issues</li>
-<li>Open Access permits the whole society to benefit from scientific
-findings</li>
-<li>Citizen Science engages the public in the research process</li>
-<li>Citizen Science can help get ecological data quickly</li>
-</ul></div>
+<p>You need to do a western blot to identify Titin proteins, the largest
+proteins in the body, with a molecular weight of 3,800 kDa. You found an
+antibody sold by Sigma Aldrich that has been validated in western blots
+and immunofluorescence. Sigma Aldrich lists the <a href="https://doi.org/10.1002/acn3.50831" class="external-link">Yu et al., 2019</a> paper as
+reference.</p>
+<p>Find details of how to separate and transfer this large protein in
+the reference paper.</p>
+<ul><li>Hint 1: Methods section has a Western blot analysis
+subsection.<br></li>
+<li>Hint 2: Follow the references.</li>
+</ul><p>Would you say that the methods was Findable? Accessible?
+Reusable?</p>
+</div>
 </div>
 </div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
@@ -669,52 +687,75 @@ findings</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<ul><li>Open Science relies strongly on the Internet T</li>
-<li>Open Access eliminates publishing costs F</li>
-<li>Open Data facilitates re-use T</li>
-<li>Open Data increases confidence in research findings T</li>
-<li>In Open Peer Review, readers vote on publication acceptance F</li>
-<li>Open Notebooks improve reproducibility T</li>
-<li>Open Notebooks can create patenting issues T*</li>
-<li>Open Access permits the whole society to benefit from scientific
-findings T</li>
-<li>Citizen Science engages the public in the research process T</li>
-<li>Citizen Science can help get ecological data quickly T</li>
+<ul><li><p>Ref 17 will lead you to <a href="https://doi.org/10.1002/ana.24102" class="external-link">this paper</a>, which first of
+all is not Open Access</p></li>
+<li><p>Access the paper through your institutions (if you can) and find
+the ‘Western Blotting’ protocol on page 232 which will show the
+following (Screenshot from the methods section from <a href="https://doi.org/10.1002/ana.24102" class="external-link">Evilä et al 2014</a>):</p></li>
+<li><figure><img src="./fig/impossible_protocol.png" alt="" class="figure mx-auto d-block"><figcaption>Figure 1. Impossible Protocol</figcaption></figure></li>
+<li><p>“Western blotting were performed according to standard methods.”
+- with no further reference to these standard methods, describing these
+methods, or supplementary material detailing these methods</p></li>
+<li><p>This methodology is unfortunately a true dead end and we thus
+can’t easily continue our experiments!</p></li>
 </ul></div>
 </div>
 </div>
 </div>
-</div>
-<section id="attribution"><h2 class="section-heading">Attribution<a class="anchor" aria-label="anchor" href="#attribution"></a>
-</h2>
-<hr class="half-width"><div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Content</span> of this episode was adapted from:</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> Wiki [Open Science]<span class="er">(</span><span class="ex">https://en.wikipedia.org/wiki/Open_science</span><span class="kw">)</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> [European Open Science Cloud]<span class="er">(</span><span class="ex">https://www.eosc-hub.eu/open-science-info</span><span class="kw">)</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> [Science is necessarily collaborative <span class="at">-</span> The Biochemist article]<span class="er">(</span><span class="ex">https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative</span><span class="kw">)</span><span class="bu">.</span></span></code></pre>
-</div>
-<div id="keypoints1" class="callout keypoints">
+<div id="impossible-numbers" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+<div id="impossible-numbers" class="callout-inner">
+<h3 class="callout-title">Impossible numbers<a class="anchor" aria-label="anchor" href="#impossible-numbers"></a>
 </h3>
 <div class="callout-content">
-<ul><li>Open Science increases transparency in research</li>
-<li>Publicly funded science should be publicly available</li>
+<p><a href="https://doi.org/10.1093/jxb/err244" class="external-link">Ikram 2014</a> paper
+contains data about various metabolites in different accessions
+(genotypes) of Arabidopsis plant. You would like to calculate average
+nitrogen content in plants grown under normal and nitrogen limited
+conditions. Please calculate the average (over genotypes) nitrogen
+content for the two experimental conditions.</p>
+<ul><li>Hint 1. Data are in Supplementary data<br></li>
+<li>Hint 2. Search for nitrogen in paper text to identify the correct
+data column.</li>
 </ul></div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<ul><li>Finding the right table and column containing the relevant data is
+already problematic as the headers are obscured so they need to decoded
+using manuscript</li>
+<li>Data in pdf table so they cannot be readily used in
+calculations</li>
+<li>Depending on the software used to open (and the way the pdf was
+created), the local machine international settings, copying the data
+into Excel can bring unexpected results <img src="./fig/03-average_to_excel1.png" alt="Figure 2. Pdf data copied to Excel" class="figure"><br><em>Data needs parsing after coping to Excel</em> <img src="./fig/03-average_to_excel1.png" alt="Figure 2. The same data copied to Excel with polish locale" class="figure"><br><em>The same data copied to Excel with polish locale has been converted
+to dates</em>
+</li>
+<li>In general pdf tables cannot be read programmatically from R or
+Python.</li>
+</ul></div>
+</div>
 </div>
 </div>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></div> <!-- / div.lesson-content -->
+</div>
+
+
+
+      </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="xTemplate.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -771,9 +812,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://BioRDM.github.io/fair-for-busy-biologists/01-OS-and-FAIR.html",
   "identifier": "https://BioRDM.github.io/fair-for-busy-biologists/01-OS-and-FAIR.html",
-  "dateCreated": "2024-02-24",
-  "dateModified": "2024-02-24",
-  "datePublished": "2024-02-24"
+  "dateCreated": "2024-02-25",
+  "dateModified": "2024-02-25",
+  "datePublished": "2024-02-25"
 }
 
   </script><script>
