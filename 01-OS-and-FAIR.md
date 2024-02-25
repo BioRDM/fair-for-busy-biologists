@@ -8,6 +8,8 @@ exercises: 20
 
 - What is Open Science?
 - How can I benefit from Open Science?
+- What are the FAIR guidelines?
+- Why being FAIR matters?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -16,6 +18,9 @@ exercises: 20
 - Identify parts of the Open Science movement, their goals and motivations
 - Explain the main benefits of Open Science
 - Recognize the barriers and risks in the adoption of Open Science practices
+- Recognize typical issues that prevent data re-use
+- Understand the FAIR principles
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -277,7 +282,8 @@ Discuss Open Science barriers, mention the reasons for not already being open:
  - misuse (fake news)
  - it is not mandatory
  - lack of credit (publishing negative results is of little benefit to you)
-:::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::
 
@@ -312,69 +318,104 @@ For example, microscopy datasets reach sizes in terabytes,
 making such data accessible for 10 years involves serious financial commitment.
 
 
+# Being FAIR
 
-### Where to next
-     Further reading/links:
-     - [Challenges & benefits of OS](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246)
-     - [Centre for Open Science](https://www.cos.io/)
-     - [Ted talk supporting OS](https://www.youtube.com/watch?v=c-bemNZ-IqA)
+We have seen how Open practices can benefit both scientific community as
+a whole and individual practitioner.
+The wide adoption of Open Access principles has resulted in an easy access
+to recent biomedical publications.
+Unfortunately, the same cannot be said about data and software
+that accompanies those publications.
 
+::::::::::::::::::::::::::::::::::::: callout
 
+## What is data
 
-::::::::::::::::::::::::::::::::::::: challenge
+Although scientific data is a very broad term, we still encounter
+groups who (wrongly) believe they do not have data!
+Data does not mean Excel files with recorded measurements from a machine.
+Data also includes:
 
-## Open Science and FAIR Quiz (5 min + runs over break)
+* images, not only from microscopes
+* information about biological materials, like strain or patient details
+* biological models
+* recipes, laboratory and measurement protocols
+* scripts, analysis procedures, and custom software can also be considered data
 
- Which of the following statements about the OS movement are true/false?
-
-* Open Science relies strongly on the Internet
-* Open Access eliminates publishing costs
-* Open Data facilitates re-use
-* Open Data can increases confidence in research findings
-* In Open Peer Review, readers vote on publication acceptance
-* Open Notebooks improve reproducibility
-* Open Notebooks can create patenting issues
-* Open Access permits the whole society to benefit from scientific findings
-* Citizen Science engages the public in the research process
-* Citizen Science can help get ecological data quickly
-
-:::::::::::::::::::::::::::::::::::: solution
-
-## Solution
-
-* Open Science relies strongly on the Internet T
-* Open Access eliminates publishing costs F
-* Open Data facilitates re-use T
-* Open Data increases confidence in research findings T
-* In Open Peer Review, readers vote on publication acceptance  F
-* Open Notebooks improve reproducibility T
-* Open Notebooks can create patenting issues T*
-* Open Access permits the whole society to benefit from scientific findings T
-* Citizen Science engages the public in the research process T
-* Citizen Science can help get ecological data quickly T
-:::::::::::::::::::::::::::::::::::::
+However, there are specific recommendations on how to deal with code.
 
 ::::::::::::::::::::::::::::::::::::: 
 
+Let's have a look how challenging it can be to access and use
+data from published biological papers.
 
+::::::::::::::::::::::::::::::::::::: challenge
 
+## Exercise 3: Impossible protocol (4 min)
 
+You need to do a western blot to identify Titin proteins,
+the largest proteins in the body, with a molecular weight of 3,800 kDa.
+You found an antibody sold by Sigma Aldrich that has been validated
+in western blots and immunofluorescence. Sigma Aldrich lists the
+[Yu et al., 2019](https://doi.org/10.1002/acn3.50831)
+paper as reference.
 
-## Attribution
-    
-     Content of this episode was adapted from:
-     * Wiki [Open Science](https://en.wikipedia.org/wiki/Open_science)
-     * [European Open Science Cloud](https://www.eosc-hub.eu/open-science-info)
-     * [Science is necessarily collaborative - The Biochemist article](https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative).
-    
+Find details of how to separate and transfer this large protein in
+the reference paper.
 
-::::::::::::::::::::::::::::::::::::: keypoints
+* Hint 1: Methods section has a Western blot analysis subsection.  
+* Hint 2: Follow the references.  
 
-- Open Science increases transparency in research
-- Publicly funded science should be publicly available
+Would you say that the methods was Findable? Accessible? Reusable?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
 
+## Solution
+
+ * Ref 17 will lead you to [this
+    paper](https://doi.org/10.1002/ana.24102), which first of all is
+    not Open Access
+ * Access the paper through your institutions (if you can) and find
+    the 'Western Blotting' protocol on page 232 which will show the
+    following (Screenshot from the methods section from [Evilä et al 2014](https://doi.org/10.1002/ana.24102)):
+ * ![Figure 1. Impossible Protocol](./fig/impossible_protocol.png)
+ * "Western blotting were performed according to standard methods." -
+    with no further reference to these standard methods, describing
+    these methods, or supplementary material detailing these methods
+ * This methodology is unfortunately a true dead end and we thus
+     can't easily continue our experiments!
+
+:::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Impossible numbers
+
+[Ikram 2014](https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
+different accessions (genotypes) of Arabidopsis plant. 
+You would like to calculate average nitrogen content in plants grown under normal and nitrogen 
+limited conditions. 
+Please calculate the average (over genotypes) nitrogen content for the two experimental conditions.
+
+* Hint 1. Data are in Supplementary data   
+* Hint 2. Search for nitrogen in paper text to identify the correct data column.  
+
+:::::::::::::::::::::::: solution
+
+## Solution
+
+* Finding the right table and column containing the relevant data is already problematic as the headers are obscured so they need to decoded using manuscript
+* Data in pdf table so they cannot be readily used in calculations
+* Depending on the software used to open (and the way the pdf was created), the local machine international settings, copying the data into Excel can bring unexpected results
+![Figure 2. Pdf data copied to Excel](./fig/03-average_to_excel1.png)  
+*Data needs parsing after coping to Excel*
+![Figure 2. The same data copied to Excel with polish locale](./fig/03-average_to_excel1.png)  
+*The same data copied to Excel with polish locale has been converted to dates*
+* In general pdf tables cannot be read programmatically from R or Python.
+
+:::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::
 
 
 
