@@ -978,11 +978,240 @@ software can be re-used. Here, we recommend:</p>
 Attribution (CC BY)</a> license,</li>
 <li>for code a permissive open source license such as the <a href="https://opensource.org/licenses/MIT" class="external-link">MIT</a>, <a href="https://opensource.org/licenses/BSD-2-Clause" class="external-link">BSD</a>, or <a href="http://www.apache.org/licenses/" class="external-link">Apache license</a>.</li>
 </ul>
+<div id="copyright-and-data" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="copyright-and-data" class="callout-inner">
+<h3 class="callout-title">Copyright and data<a class="anchor" aria-label="anchor" href="#copyright-and-data"></a>
+</h3>
+<div class="callout-content">
+<p>Software code (the text) automatically gets the default copyright
+protection which prevents others from copying or modifying it. Only by
+adding the explicit licence you can permit re-use by others.</p>
+<p>Data, being factual, cannot be copyrighted. <strong>So why, do we
+need a license?</strong></p>
+<p>While the data itself cannot be copyrighted, the way how it is
+presented can be. The extend to which it is protected needs ultimately
+to be settled by the court.</p>
+<p>The “good actors” will restrain from using your data to avoid “court”
+risks. The “bad actors” will either ignore the risk or can afford the
+lawyers fees.</p>
+</div>
+</div>
+</div>
+<div id="challenge4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+</h3>
+<div class="callout-content">
+<p>## Exercise 4: Example of FAIR data (4 min)</p>
+<p>Zenodo is general data repository. Have a look at the dataset record
+with COVID-19 data: <a href="https://doi.org/10.5281/zenodo.6339631" class="external-link">https://doi.org/10.5281/zenodo.6339631</a></p>
+<p>Identify how each of F.A.I.R principles has been met.<br><em>Hint: navigate to linked github record to easily access the README
+file</em></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<ul>
+<li><ol start="6" style="list-style-type: upper-alpha">
+<li>The dataset is identified by a PID (doi). It can be found by its ID.
+It human accessible description and keywords, both suitable for
+discovery.</li>
+</ol></li>
+<li><ol style="list-style-type: upper-alpha">
+<li>Data can be downloaded using standard browser.</li>
+</ol></li>
+<li><ol style="list-style-type: upper-roman">
+<li>Dataset entries are in common formats: csv, R, jpg</li>
+</ol></li>
+<li><ol style="list-style-type: upper-roman">
+<li>Dataset is linked to publication, github record and project
+website</li>
+</ol></li>
+<li><ol start="18" style="list-style-type: upper-alpha">
+<li>The record contains rich metadata in README file, including files
+structure and the detailed tables formats.</li>
+</ol></li>
+<li><ol start="18" style="list-style-type: upper-alpha">
+<li>Data are released under open Creative Commons Attribution
+Licence</li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="fair-and-you-3-min">FAIR and You (3 min)<a class="anchor" aria-label="anchor" href="#fair-and-you-3-min"></a>
+</h2>
+<p>The FAIR acronym is sometimes accompanied with the following labels:
+* Findable - Citable * Accessible - Trackable and countable *
+Interoperable - Intelligible * Reusable - Reproducible</p>
+<p>## Solution</p>
+<ul>
+<li>Findable data have their own identity, so they can be easily cited
+and secure the credits to the authors</li>
+<li>Data accessibility over the Internet using standard protocols can be
+easily monitored (for example using Google analytics). This results in
+metrics on data popularity or even geo-locations of data users.</li>
+<li>Interoperable data can benefit the future you, for example you will
+be able to still read your data even when you no longer have access to
+the specialized, vendor specific software with which you worked with
+them before. Also the future you may not remember abreviations and
+ad-hoc conventions you used before (Intelligible).</li>
+<li>Well documented data should contain all the details necessary to
+reproduce the experiments, helping the future you or someone taking over
+from you in the laboratory.</li>
+<li>Saves time and money.</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="fair-vs-open-science-3-min-teaching">FAIR vs Open Science (3 min teaching)<a class="anchor" aria-label="anchor" href="#fair-vs-open-science-3-min-teaching"></a>
+</h2>
+<p><strong>FAIR does not mean Open</strong>. Actually, FAIR guideline
+only requires that the metadata record is always accessible. For
+example, the existence of the data can be known (their metadata), the
+data can have easy to use PID to reference them, but the actual data
+files can only be downloaded after the login and authorization.</p>
+<p>However, if data are already in the FAIR form, i.e. accessible over
+the internet, in interoperable format and well documented, then it is
+almost effortless to “open” the dataset and make it available to the
+whole public. The data owner can do it any time when he no longer
+perceives oppening as a risk.</p>
+<p>At the same time, Open data which does not follow FAIR guidelines
+have little value. If they are not well described, not in open formats
+then they are not going to be re-used even if they were made “open” by
+posting them on some website.</p>
+<div class="section level3">
+<h3 id="where-to-next">Where to next<a class="anchor" aria-label="anchor" href="#where-to-next"></a>
+</h3>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Further</span> reading/links:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Challenges <span class="kw">&amp;</span> <span class="ex">benefits</span> of OS]<span class="er">(</span><span class="ex">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000246</span><span class="kw">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Centre for Open Science]<span class="er">(</span><span class="ex">https://www.cos.io/</span><span class="kw">)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">-</span> [Ted talk supporting OS]<span class="er">(</span><span class="ex">https://www.youtube.com/watch?v=c-bemNZ-IqA</span><span class="kw">)</span></span></code></pre>
+</div>
+<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout-inner">
+<h3 class="callout-title">Open Science and FAIR Quiz (5 min + runs over
+break)<a class="anchor" aria-label="anchor" href="#open-science-and-fair-quiz-5-min-runs-over-break"></a>
+</h3>
+<div class="callout-content">
+<p>Which of the following statements about the OS movement are
+true/false?</p>
+<ul>
+<li>Open Science relies strongly on the Internet</li>
+<li>Open Access eliminates publishing costs</li>
+<li>Open Data facilitates re-use</li>
+<li>Open Data can increases confidence in research findings</li>
+<li>In Open Peer Review, readers vote on publication acceptance<br>
+</li>
+<li>Open Access permits the whole society to benefit from scientific
+findings</li>
+<li>Citizen Science engages the public in the research process</li>
+<li>Release of public datasets is important for career progression</li>
+<li>F in FAIR stands for free.</li>
+<li>Only figures presenting results of statistical analysis need
+underlying numerical data.</li>
+<li>Sharing numerical data as a .pdf in Zenodo is FAIR.</li>
+<li>Sharing numerical data as an Excel file via Github is not FAIR.</li>
+<li>Group website is a good place to share your data.</li>
+<li>Data should always be converted to Excel or .csv files in order to
+be FAIR.</li>
+<li>A DOI of a dataset helps in getting credit.</li>
+<li>FAIR data are peer reviewed.</li>
+<li>FAIR data accompany a publication.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<ul>
+<li>Open Science relies strongly on the Internet T</li>
+<li>Open Access eliminates publishing costs F</li>
+<li>Open Data facilitates re-use T</li>
+<li>Open Data increases confidence in research findings T</li>
+<li>In Open Peer Review, readers vote on publication acceptance F</li>
+<li>Open Access permits the whole society to benefit from scientific
+findings T</li>
+<li>Citizen Science engages the public in the research process T</li>
+<li>Release of public datasets is important for career progression
+T</li>
+<li>F in FAIR stands for free. F</li>
+<li>Only figures presenting results of statistical analysis need
+underlying numerical data. F</li>
+<li>Sharing numerical data as a .pdf in Zenodo is FAIR. F</li>
+<li>Sharing numerical data as an Excel file via Github is not FAIR.
+F</li>
+<li>Group website is a good place to share your data. F</li>
+<li>Data should always be converted to Excel or .csv files in order to
+be FAIR. F</li>
+<li>A DOI of a dataset helps in getting credit. T</li>
+<li>FAIR data are peer reviewed. F</li>
+<li>FAIR data accompany a publication. F</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="attribution">Attribution<a class="anchor" aria-label="anchor" href="#attribution"></a>
+</h2>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Content</span> of this episode was adapted from:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> Wiki [Open Science]<span class="er">(</span><span class="ex">https://en.wikipedia.org/wiki/Open_science</span><span class="kw">)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> [European Open Science Cloud]<span class="er">(</span><span class="ex">https://www.eosc-hub.eu/open-science-info</span><span class="kw">)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">*</span> [Science is necessarily collaborative <span class="at">-</span> The Biochemist article]<span class="er">(</span><span class="ex">https://portlandpress.com/biochemist/article/42/3/58/225220/Science-is-necessarily-collaborative</span><span class="kw">)</span><span class="bu">.</span></span></code></pre>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Open Science increases transparency in research</li>
+<li>Publicly funded science should be publicly available</li>
+<li>FAIR stands for Findable Accessible Interoperable Reusable</li>
+<li>FAIR assures easy reuse of data underlying scientific findings</li>
+</ul>
+</div>
+</div>
+</div>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</div>
 </div>
 </div></section><section id="aio-xTemplate"><p>Content from <a href="xTemplate.html">Using Markdown</a></p>
 <hr>
