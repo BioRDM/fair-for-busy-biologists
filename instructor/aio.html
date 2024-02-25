@@ -643,7 +643,7 @@ being open:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>sensitive data (anonymising data from administrative health records
@@ -760,7 +760,7 @@ Reusable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li><p>Ref 17 will lead you to <a href="https://doi.org/10.1002/ana.24102" class="external-link">this paper</a>, which first of
@@ -807,7 +807,7 @@ data column.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ul>
 <li>Finding the right table and column containing the relevant data is
@@ -827,10 +827,86 @@ Python.</li>
 </div>
 </div>
 </div>
+<p>(29 min teaching)</p>
+<p>The above examples illustrate the typical challenges in accessing
+research data and software. Firstly, data/protocols/software often do
+not have an identity of their own, but only accompany a publication.
+Second, they are not easily accessible or reusable, for example, all the
+details are inside one supporting information PDF file. Such file
+includes “printed” numerical table or even source code, both of which
+need to be “re-typed” if someone would like to use them. Data are shared
+in proprietary file format specific to a particular vendor and not
+accessible if one does not have a particular software that accompanies
+the equipment. Finally, data files are provided without detailed
+description other than the whole article text.</p>
+<p>In our examples, the protocol was difficult to <strong>find</strong>
+(the loops), difficult to <strong>access</strong> (pay wall), and not
+<strong>reusable</strong> as it lacked the necessary details (dead-end).
+In the second example the data were not <strong>interoperable</strong>
+and <strong>reusable</strong> as their were only available as a figure
+graph.</p>
+<p>To avoid such problems FAIR principles were designed.</p>
+<p><img src=".././fig/FAIR.png" alt="Figure 2. FAIR principles" class="figure"> After <a href="https://commons.wikimedia.org/wiki/File:FAIR_data_principles.jpg" class="external-link">SangyaPundir</a></p>
+<div id="fair-principles" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="fair-principles" class="callout-inner">
+<h3 class="callout-title">FAIR Principles<a class="anchor" aria-label="anchor" href="#fair-principles"></a>
+</h3>
+<div class="callout-content">
+<p>In 2016, the <a href="https://www.nature.com/articles/sdata201618" class="external-link">FAIR Guiding
+Principles for scientific data management and stewardship</a> were
+published in Scientific Data. The original guideline focused on
+“machine-actionability” - the ability of computer systems to operate on
+data with minimal human intervention. However, now the focus has shifted
+to making data accessible from a human perspective, and not an automated
+one (mostly due to the lack of user friendly tools that could help deal
+with standards and structured metadata).</p>
+<p><strong>Findable</strong>: Easy to find data and metadata for both
+humans and computers. Automatic and reliable discovery of datasets and
+services depends on machine-readable persistent identifiers (PIDs) and
+metadata.</p>
+<p><strong>Accessible</strong>: (Meta)data should be retrievable by
+their identifier using a standardized and open communications protocol
+(including authentication and authorisation). Metadata should be
+available even when the data are no longer available.</p>
+<p><strong>Interoperable</strong>: Data should be able to be combined
+with and used with other data or tools. The format of the data should be
+open and interpretable for various tools. It applies both to data and
+metadata, (meta)data should use vocabularies that follow FAIR
+principles.</p>
+<p><strong>Re-usable</strong>: FAIR aims at optimizing the reuse of
+data. Metadata and data should be well-described so that they can be
+replicated and/or combined in different settings. The reuse of
+(meta)data should be stated with clear and accessible license(s).</p>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="fair-in-biological-practice">FAIR in biological practice<a class="anchor" aria-label="anchor" href="#fair-in-biological-practice"></a>
+</h2>
+<div class="section level4">
+<h4 id="findable-accessible">Findable &amp; Accessible<a class="anchor" aria-label="anchor" href="#findable-accessible"></a>
+</h4>
+<p>Deposit data to an external, reputable public repository.</p>
+<p>Repositories provide persistent identifiers (PIDs), catalogue
+options, advanced metadata searching, and download statistics. Some
+repositories can also host private data or provide embargo periods,
+meaning access to all data can be delayed.</p>
+<p>There are general “data agnostic” repositories, for example: * <a href="http://datadryad.org" class="external-link">Dryad</a>, * <a href="http://zenodo.org" class="external-link">Zenodo</a>, * <a href="http://figshare.com" class="external-link">FigShare</a>, * <a href="http://thedata.org" class="external-link">Dataverse</a>.</p>
+<p>Or domain specific, for example: * <a href="https://www.uniprot.org/" class="external-link">UniProt</a> protein data, * <a href="https://www.ncbi.nlm.nih.gov/genbank/" class="external-link">GenBank</a> sequence data,
+* <a href="https://www.ebi.ac.uk/metabolights/" class="external-link">MetaboLights</a>
+metabolomics data * <a href="https://github.com/" class="external-link">GitHub</a> for
+code.</p>
+<p><em>We will cover repositories in more details in a later
+episode.</em></p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</div>
+</div>
 </div></section><section id="aio-xTemplate"><p>Content from <a href="xTemplate.html">Using Markdown</a></p>
 <hr>
 <p>Last updated on 2024-02-24 |
@@ -896,7 +972,7 @@ reinforce the objectives.</li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -928,7 +1004,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Output</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -957,7 +1033,7 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
