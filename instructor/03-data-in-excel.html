@@ -176,6 +176,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#common-spreadsheet-errors-25-min-teaching">Common Spreadsheet Errors (25 min teaching)</a></li>
+<li><a href="#clean-data-tables-make-life-easier-6-min-teaching">Clean data tables make life easier (6 min teaching)</a></li>
+<li><a href="#handling-dates">Handling dates</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -653,15 +655,10 @@ column?</p>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="clean-data-tables-make-life-easier-6-min-teaching">Clean data tables make life easier (6 min
-teaching)<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier-6-min-teaching"></a></h3>
-<div class="callout-content">
-<p>Let’s check the cleaned version of the previous <a href=".././files/04-better-metadata.xlsx">file</a>.</p>
+</section><section id="clean-data-tables-make-life-easier-6-min-teaching"><h2 class="section-heading">Clean data tables make life easier (6 min teaching)<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier-6-min-teaching"></a>
+</h2>
+<hr class="half-width"><p>Let’s check the cleaned version of the previous <a href=".././files/04-better-metadata.xlsx">file</a>.</p>
 <p>Look how easy it is to calculate the average biomas, and if you have
 Office365, see how easy it is to get average values per genotype.</p>
 <p>Do you think it would take more effort to record data in a cleaned
@@ -669,9 +666,6 @@ way to start with, in comparison to the ‘bad example’ presented
 before?</p>
 <p>How long do you think it took to “clean” the original, problematic
 data?</p>
-</div>
-</div>
-</div>
 <div id="exercise-3-outsmarted-by-excel-3-min" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -719,7 +713,9 @@ converting gene names to things like calendar dates or random
 numbers.</p>
 <p>Those errors actually forced the renaming of 27 gene symbols
 including SEPT4 (now SEPTIN4) and MARCH1 (now MARCHF1).</p>
-<p>Storing and handling dates is generally problematic even in
+</section><section id="handling-dates"><h2 class="section-heading">Handling dates<a class="anchor" aria-label="anchor" href="#handling-dates"></a>
+</h2>
+<hr class="half-width"><p>Storing and handling dates is generally problematic even in
 programming languages, as we tend to use dates in various formats and
 those formats are region specific.</p>
 <p>Have you ever got confused by a meeting date from an American
@@ -727,8 +723,9 @@ collaborator?</p>
 <p>If the dates are “real” data, for example sample collection from a
 patient or field measurement, preventing misinterpretations is crucial.
 There are two safe options:</p>
-<ol style="list-style-type: decimal"><li>Store dates in 3 columns for year, month and day:</li>
-</ol><table class="table"><thead><tr class="header"><th>Year</th>
+<div class="section level4">
+<h4 id="store-dates-in-3-columns-for-year-month-and-day">Store dates in 3 columns for year, month and day:<a class="anchor" aria-label="anchor" href="#store-dates-in-3-columns-for-year-month-and-day"></a></h4>
+<table class="table"><thead><tr class="header"><th>Year</th>
 <th>Month</th>
 <th>Day</th>
 </tr></thead><tbody><tr class="odd"><td>2021</td>
@@ -737,15 +734,16 @@ There are two safe options:</p>
 </tr><tr class="even"><td>2021</td>
 <td>10</td>
 <td>1</td>
-</tr></tbody></table><ol start="2" style="list-style-type: decimal"><li>Store the date as an <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO</a> string:
-<code>YYYYMMDD</code> e.g. <code>20210316</code>
-</li>
-</ol><p>Even though, normally <code>YYYY-MM-DD</code> format is preferred, it
+</tr></tbody></table></div>
+<div class="section level4">
+<h4 id="or-store-the-date-as-an-iso-string">Or store the date as an <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO</a> string:<a class="anchor" aria-label="anchor" href="#or-store-the-date-as-an-iso-string"></a></h4>
+<p><code>YYYYMMDD</code> e.g. <code>20210316</code><br><code>YYYY-MM-DD</code> e.g. <code>2021-03-16</code></p>
+<p>Even though, normally <code>YYYY-MM-DD</code> format is preferred, it
 will be sadly reformatted by Excel according to your locale when saving
 to text like .csv!</p>
 <p>When using text files (.csv, .tsv), You should always document what
 format you are using to represent dates.</p>
-<div id="callout2" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -760,20 +758,21 @@ interoperable. Nowadays it is admissible as being FAIR.</p>
 can also easily be imported into other formats and environments, such as
 SQLite and R. We are not tied to a certain version of a certain
 expensive program when we work with CSV files, so it is a good format to
-work with for maximum portability, interoperability and endurance. If
-such files are handled only with text editors or programmatically (R,
-Python) then they are a safer option as they prevent the autoformatting
-issues described before.</p>
+work with for maximum portability, interoperability and endurance.</p>
+<p>If such files are handled only with text editors or programmatically
+(R, Python) then they are a safer option as they prevent the
+autoformatting issues described before.</p>
 <p>If you analyse your data with R or Python, or you know that your data
 are meant to be processed that way you should be using text formats
 whenever possible, and as soon as you capture your data.</p>
-<p>However, if you only use Excel and so does your community, just keep
-using it. Just be aware of the possible pitfalls discussed, especially
-when working with gene or protein names and accession numbers.</p>
+<p>However, if you are used to only use Excel and so does your
+community, just keep using it. Just be aware of the possible pitfalls
+discussed, especially when working with gene or protein names and
+accession numbers.</p>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>

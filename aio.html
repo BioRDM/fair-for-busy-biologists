@@ -665,7 +665,7 @@ being open:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>sensitive data (anonymising data from administrative health records
@@ -782,7 +782,7 @@ Reusable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Ref 17 will lead you to <a href="https://doi.org/10.1002/ana.24102" class="external-link">this paper</a>, which first of
@@ -830,7 +830,7 @@ data column.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ul>
 <li>Finding the right table and column containing the relevant data is
@@ -949,7 +949,7 @@ episode.</em></p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>What are persistent identifiers (PIDs)</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>A persistent identifier is a long-lasting reference to a digital
 resource. Typically it has two components:</p>
@@ -1064,7 +1064,7 @@ file</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ul>
 <li>F: The dataset is identified by a PID (doi). It can be found by its
@@ -1168,7 +1168,7 @@ be FAIR.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ul>
 <li>Open Science relies strongly on the Internet T</li>
@@ -2080,15 +2080,10 @@ column?</p>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="clean-data-tables-make-life-easier-6-min-teaching">Clean data tables make life easier (6 min
-teaching)<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier-6-min-teaching"></a>
-</h3>
-<div class="callout-content">
+</section><section id="clean-data-tables-make-life-easier-6-min-teaching"><h2 class="section-heading">Clean data tables make life easier (6 min teaching)<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier-6-min-teaching"></a>
+</h2>
+<hr class="half-width">
 <p>Let’s check the cleaned version of the previous <a href="./files/04-better-metadata.xlsx">file</a>.</p>
 <p>Look how easy it is to calculate the average biomas, and if you have
 Office365, see how easy it is to get average values per genotype.</p>
@@ -2097,9 +2092,6 @@ way to start with, in comparison to the ‘bad example’ presented
 before?</p>
 <p>How long do you think it took to “clean” the original, problematic
 data?</p>
-</div>
-</div>
-</div>
 <div id="exercise-3-outsmarted-by-excel-3-min" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -2159,6 +2151,9 @@ converting gene names to things like calendar dates or random
 numbers.</p>
 <p>Those errors actually forced the renaming of 27 gene symbols
 including SEPT4 (now SEPTIN4) and MARCH1 (now MARCHF1).</p>
+</section><section id="handling-dates"><h2 class="section-heading">Handling dates<a class="anchor" aria-label="anchor" href="#handling-dates"></a>
+</h2>
+<hr class="half-width">
 <p>Storing and handling dates is generally problematic even in
 programming languages, as we tend to use dates in various formats and
 those formats are region specific.</p>
@@ -2167,9 +2162,9 @@ collaborator?</p>
 <p>If the dates are “real” data, for example sample collection from a
 patient or field measurement, preventing misinterpretations is crucial.
 There are two safe options:</p>
-<ol style="list-style-type: decimal">
-<li>Store dates in 3 columns for year, month and day:</li>
-</ol>
+<div class="section level4">
+<h4 id="store-dates-in-3-columns-for-year-month-and-day">Store dates in 3 columns for year, month and day:<a class="anchor" aria-label="anchor" href="#store-dates-in-3-columns-for-year-month-and-day"></a>
+</h4>
 <table class="table">
 <thead><tr class="header">
 <th>Year</th>
@@ -2189,17 +2184,17 @@ There are two safe options:</p>
 </tr>
 </tbody>
 </table>
-<ol start="2" style="list-style-type: decimal">
-<li>Store the date as an <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO</a> string:
-<code>YYYYMMDD</code> e.g. <code>20210316</code>
-</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="or-store-the-date-as-an-iso-string">Or store the date as an <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO</a> string:<a class="anchor" aria-label="anchor" href="#or-store-the-date-as-an-iso-string"></a>
+</h4>
+<p><code>YYYYMMDD</code> e.g. <code>20210316</code><br><code>YYYY-MM-DD</code> e.g. <code>2021-03-16</code></p>
 <p>Even though, normally <code>YYYY-MM-DD</code> format is preferred, it
 will be sadly reformatted by Excel according to your locale when saving
 to text like .csv!</p>
 <p>When using text files (.csv, .tsv), You should always document what
 format you are using to represent dates.</p>
-<div id="callout2" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -2215,20 +2210,21 @@ interoperable. Nowadays it is admissible as being FAIR.</p>
 can also easily be imported into other formats and environments, such as
 SQLite and R. We are not tied to a certain version of a certain
 expensive program when we work with CSV files, so it is a good format to
-work with for maximum portability, interoperability and endurance. If
-such files are handled only with text editors or programmatically (R,
-Python) then they are a safer option as they prevent the autoformatting
-issues described before.</p>
+work with for maximum portability, interoperability and endurance.</p>
+<p>If such files are handled only with text editors or programmatically
+(R, Python) then they are a safer option as they prevent the
+autoformatting issues described before.</p>
 <p>If you analyse your data with R or Python, or you know that your data
 are meant to be processed that way you should be using text formats
 whenever possible, and as soon as you capture your data.</p>
-<p>However, if you only use Excel and so does your community, just keep
-using it. Just be aware of the possible pitfalls discussed, especially
-when working with gene or protein names and accession numbers.</p>
+<p>However, if you are used to only use Excel and so does your
+community, just keep using it. Just be aware of the possible pitfalls
+discussed, especially when working with gene or protein names and
+accession numbers.</p>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -2389,7 +2385,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Output</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2418,7 +2414,7 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
