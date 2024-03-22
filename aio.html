@@ -205,7 +205,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-data-in-excel.html">3. (Meta)data in Excel</a>
+        <a href="03-tidy-data-tables.html">3. Tidy (meta)data tables</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -229,7 +229,31 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="xTemplate.html">5. Using Markdown</a>
+        <a href="05-reusable-analysis.html">5. Reusable analysis</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-data-repositories.html">6. Public repositories</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-journey-to-FAIR.html">7. Journey to be FAIR</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -294,7 +318,7 @@
         
 <section id="aio-01-OS-and-FAIR"><p>Content from <a href="01-OS-and-FAIR.html">Introduction to Open Science and FAIR principles</a></p>
 <hr>
-<p>Last updated on 2024-02-25 |
+<p>Last updated on 2024-03-22 |
         
         <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/01-OS-and-FAIR.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -311,7 +335,7 @@
 <li>What is Open Science?</li>
 <li>How can I benefit from Open Science?</li>
 <li>What are the FAIR guidelines?</li>
-<li>Why being FAIR matters?</li>
+<li>Why is being FAIR important?</li>
 </ul>
 </div>
 </div>
@@ -321,30 +345,30 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Identify parts of the Open Science movement, their goals and
-motivations</li>
-<li>Explain the main benefits of Open Science</li>
-<li>Recognize the barriers and risks in the adoption of Open Science
-practices</li>
-<li>Recognize typical issues that prevent data re-use</li>
-<li>Understand the FAIR principles</li>
+<li>Identify the components of the Open Science movement, their goals,
+and motivations.</li>
+<li>Explain the key benefits of Open Science.</li>
+<li>Recognize the barriers and challenges associated with adopting Open
+Science practices.</li>
+<li>Identify common issues that hinder data reusability.</li>
+<li>Understand the FAIR principles.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>(16 min teaching)</p>
-<p>Science works best by exchanging ideas and building on them. Most
-efficient science involves both questions and experiments being made as
-fully informed as possible, which requires the free exchange of data and
+<p>(10 min teaching)</p>
+<p>Science thrives on the exchange and development of ideas. The most
+efficient scientific progress involves well-informed questions and
+experiments, which necessitates the free exchange of data and
 information.</p>
 <p>All practices that make knowledge and data <strong>freely
-available</strong> fall under the umbrella-term of <strong>Open
-Science/Open Research</strong>. It makes science <strong>more
-reproducible, transparent, and accessible</strong>. As science becomes
-more open, the way we conduct and communicate science changes
-continuously.</p>
+available</strong> fall under the umbrella term of <strong>Open
+Science/Open Research</strong>. It fosters greater
+<strong>reproducibility, transparency, and accessibility</strong> in
+science. As science becomes more open, the way we conduct and
+communicate scientific findings continuously evolves.</p>
 <div id="what-is-open-science" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -358,20 +382,21 @@ publications, data, physical samples, and software) and its
 dissemination <strong>accessible to all levels</strong> of an inquiring
 society, amateur or professional.</p>
 <p>Open Science represents a new approach to the scientific process
-based on <strong>cooperative work</strong> and new ways of diffusing
-knowledge by <strong>using digital technologies</strong> and new
-collaborative tools.</p>
-<p>Open science is <strong>transparent and accessible knowledge</strong>
-that is shared and developed through collaborative networks.</p>
+based on <strong>collaborative work</strong> and utilizing
+<strong>digital technologies</strong> and new collaborative tools to
+disseminate knowledge.</p>
+<p>Open science promotes <strong>transparent and accessible
+knowledge</strong> that is shared and developed through collaborative
+networks.</p>
 <p>Characteristics:</p>
 <ul>
-<li>Using web-based tools to facilitate information exchange and
+<li>Utilizing web-based tools to facilitate information exchange and
 scientific collaboration</li>
-<li>Transparency in experimental methodology, observation, and
-collection of data</li>
-<li>Public availability and reusability of scientific data, methods and
+<li>Transparency in experimental methodology, observations, and data
+collection</li>
+<li>Public availability and reusability of scientific data, methods, and
 communications</li>
-<li>various outputs and audiences</li>
+<li>Diverse outputs and target audiences</li>
 </ul>
 </div>
 </div>
@@ -379,18 +404,19 @@ communications</li>
 <div class="section level3">
 <h3 id="what-is-the-open-science-movement">What is the Open Science movement?<a class="anchor" aria-label="anchor" href="#what-is-the-open-science-movement"></a>
 </h3>
-<p>The distribution of knowledge has always been subject to improvement.
-Whilst the internet was initially developed for military purposes, it
-was hijacked for communication between scientists, which provided a
-viable route to change the dissemination of science.</p>
-<p>The momentum has built up with a change in the way science is
-communicated to reflect what research communities are calling for –
-solutions to the majority of problems (e.g. impact factors, data
-reusability, reproducibility crisis, trust in the public science sector
-etc…) that we face today.</p>
+<p>The distribution of knowledge has always had room for improvement.
+While the internet was initially developed for military purposes, it was
+ultimately used for communication between scientists, providing a viable
+path to transform how science is disseminated.</p>
+<p>The momentum has grown alongside a shift in how science is
+communicated, reflecting the needs of research communities. Open Science
+addresses many of the pressing issues we face today, such as impact
+factors, data reusability, the reproducibility crisis, and trust in the
+public science sector.</p>
 <p>Open Science is the movement to increase transparency and
-reproducibility of research, through using the open best practices.</p>
-<figure><img src="fig/OpenScienceBuildingBlocks.jpg" alt="Figure 1. Open Science Building Blocks" class="figure mx-auto d-block"><div class="figcaption">Figure 1. Open Science Building Blocks</div>
+reproducibility of research through the adoption of open best
+practices.</p>
+<figure><img src="./fig/OpenScienceBuildingBlocks.jpg" alt="Figure 1. Open Science Building Blocks" class="figure mx-auto d-block"><div class="figcaption">Figure 1. Open Science Building Blocks</div>
 </figure><p><em>After <a href="https://www.fosteropenscience.eu/content/what-open-science-introduction" class="external-link">Gema
 Bueno de la Fuente</a></em></p>
 </div>
@@ -398,167 +424,165 @@ Bueno de la Fuente</a></em></p>
 <h3 id="open-science-building-blocks">Open Science Building Blocks<a class="anchor" aria-label="anchor" href="#open-science-building-blocks"></a>
 </h3>
 <ul>
-<li><p><strong>Open Access:</strong> Research outputs hosted in a way
-that make them accessible for everyone. Traditionally Open Access
-referred to journal articles, but now includes books, chapters or
+<li><p><strong>Open Access:</strong> Research outputs are hosted in a
+way that makes them accessible to everyone. Traditionally, Open Access
+referred to journal articles, but now encompasses books, chapters, or
 images.</p></li>
-<li><p><strong>Open Data:</strong> Data freely and readily available to
-access, reuse, and share. Smaller data sets were often accessible as
-supplemental materials by journals alongside articles themselves.
-However, they should be hosted in dedicated platforms for more
-convenient and better access.</p></li>
-<li><p><strong>Open Software:</strong> Software where the source code is
-made readily available; others are free to use, change, and share. Some
-examples of these including the coding language and supporting software
-R and RStudio, as well as image analysis software such as
-Fiji/ImageJ.</p></li>
-<li><p><strong>Open Notebooks:</strong> Lab &amp; notebooks hosted
-online, readily accessible to all. These are popular among some of the
-large funding bodies and allow anyone to comment on any stage of the
-experimental record.</p></li>
+<li><p><strong>Open Data:</strong> Data is freely and readily available
+to access, reuse, and share. Smaller data sets were often included as
+supplemental materials alongside articles in journals. However, they
+should be hosted on dedicated platforms for more convenient and improved
+access.</p></li>
+<li><p><strong>Open Software:</strong> Software with readily available
+source code; others can freely use, modify, and share it. Examples
+include the coding language and supporting software R and RStudio, as
+well as image analysis software like Fiji/ImageJ.</p></li>
+<li><p><strong>Open Notebooks:</strong> Lab notebooks hosted online,
+readily accessible to all. These are popular among some large funding
+bodies and allow anyone to comment on any stage of the experimental
+record.</p></li>
 <li><p><strong>Open Peer Review:</strong> A system where peer review
-reports are published alongside the body of work. This can include
-reviewers’ reports, correspondence between parties involved, rebuttals,
-editorial decisions etc…</p></li>
-<li><p><strong>Citizens Science:</strong> Lay people become involved in
+reports are published alongside the research work. This can include
+reviewers’ reports, correspondence between involved parties, rebuttals,
+editorial decisions, etc.</p></li>
+<li><p><strong>Citizen Science:</strong> Lay people contribute to
 scientific research, most commonly in data collection or image analysis.
-Platforms such as <a href="https://www.zooniverse.org/" class="external-link">zooniverse.org</a> help connect
-projects with lay people interested in playing an active role in
-research, which can help generate and/or process data which would
-otherwise be unachievable by one single person.</p></li>
+Platforms like <a href="https://www.zooniverse.org/" class="external-link">https://www.zooniverse.org/</a>
+connect projects with interested laypeople who can actively participate
+in research, helping to generate and/or process data that would be
+unachievable by a single person.</p></li>
 <li><p><strong>Scientific social networks:</strong> Networks of
-researchers, which often meet locally in teams, but are also connected
-online, foster open discussions on scientific issues. Online, many
-people commonly use traditional social media platforms for this, such as
-Twitter, Instagram, various sub-reddits, discussion channels on
-Slack/Discord etc…, although there are also more dedicated spaces such
-as <a href="https://www.researchgate.net/" class="external-link">researchgate.net</a>.</p></li>
-<li><p><strong>Open Education resources:</strong> Educational materials
-that are free for anyone to access and use to learn from. These can be
-anything from talks, instructional videos, and explanations posted on
-video hosting websites (e.g. YouTube), to entire digital textbooks
-written and then published freely online.</p></li>
+researchers, often meeting locally in teams but also connected online,
+foster open discussions on scientific issues. Many researchers use
+traditional social media platforms for this purpose, such as Twitter,
+Instagram, various subreddits, discussion channels on Slack/Discord,
+etc. There are also dedicated spaces like <a href="https://www.researchgate.net/" class="external-link">https://www.researchgate.net/</a>.</p></li>
+<li><p><strong>Open Educational Resources:</strong> Educational
+materials that are free for anyone to access and use for learning. These
+can be anything from talks, instructional videos. This very course is a
+perfect example of that!</p></li>
 </ul>
 </div>
 <div class="section level3">
 <h3 id="benefits-of-open-science">Benefits of Open Science<a class="anchor" aria-label="anchor" href="#benefits-of-open-science"></a>
 </h3>
-<p>Possible benefits and consequences for each OS module:</p>
+<p>Possible benefits and consequences for each Open Science module:</p>
 <p><strong>Open Access</strong></p>
 <ul>
-<li>speed of knowledge distribution</li>
-<li>leveling field for underfunded sites which otherwise wouldn’t be
-able to navigate the paywall</li>
-<li>prevent articles being paid for ‘thrice’ (first to produce, second
-to publish, third to access) by institutions.</li>
-<li>greater access to work by others, increasing chance for exposure
-&amp; citations</li>
-<li>access to work by lay audiences, thus increases social exposure of
-research</li>
+<li>Faster dissemination of knowledge</li>
+<li>Levels the playing field for underfunded institutions that wouldn’t
+otherwise be able to access research behind paywalls</li>
+<li>Prevents articles from being paid for “three times” (first to
+produce, second to publish, third to access) by institutions</li>
+<li>Increases access to work by others, leading to greater exposure and
+citations</li>
+<li>Provides access to research for laypeople, thus increasing public
+awareness of science</li>
 </ul>
 <p><strong>Open Data</strong></p>
 <ul>
-<li>ensures data isn’t lost overtime - reusability</li>
-<li>acceleration of scientific discovery rate</li>
-<li>value for money/reduced redundancy</li>
-<li>permits statistical re-analysis of the data to validate
-findings</li>
-<li>gives access to datasets which were not published as papers
-(e.g. negative results, large screening data sets)</li>
-<li>provides an avenue to generate new hypotheses</li>
-<li>permits combination of multiple data sources to address questions,
-provides greater power than a single data source</li>
+<li>Ensures data isn’t lost over time - promotes reusability</li>
+<li>Accelerates scientific discovery</li>
+<li>Provides value for money and reduces redundancy</li>
+<li>Allows for statistical re-analysis of data to validate findings</li>
+<li>Gives access to datasets not published in papers (e.g., negative
+results, large screening data sets)</li>
+<li>Provides a way to generate new hypotheses</li>
+<li>Enables the combination of multiple data sources to address
+questions, providing greater power than a single data source</li>
 </ul>
 <p><strong>Open Software</strong></p>
 <ul>
-<li>great source to learn programming skills</li>
-<li>the ability to modify creates a supportive community of users and
-rapid innovation</li>
-<li>saves time</li>
-<li>faster bug fixes</li>
-<li>better error scrutiny</li>
-<li>use of the same software/code allows better reproducibility between
-experiments</li>
-<li>need funds to maintain and update software</li>
+<li>Excellent resource for learning programming skills</li>
+<li>The ability to modify software fosters a supportive community of
+users and rapid innovation</li>
+<li>Saves time</li>
+<li>Enables faster bug fixes</li>
+<li>Encourages better error scrutiny</li>
+<li>Using the same software/code allows for better reproducibility
+between experiments</li>
+<li>Requires funding to maintain and update software</li>
 </ul>
 <p><strong>Open Notebooks</strong></p>
 <ul>
-<li>100% transparent science, allowing input from others at early stages
-of experiments</li>
-<li>source of learning about the process of how science is actually
-conducted</li>
-<li>allows access to experiments and data which otherwise never get
+<li>Promotes 100% transparent science, allowing input from others at
+early stages of experiments</li>
+<li>Provides a source for learning about the scientific process</li>
+<li>Allows access to experiments and data that otherwise might never get
 published</li>
-<li>provides access to ‘negative’ results and failed experiments</li>
-<li>anyone, anywhere around the world, at any time, can check in on
-projects, including many users simultaneously</li>
-<li>possibility of immediate feedback</li>
-<li>thorough evidence of originality of ideas and experiments, negating
-effect of ‘scooping’</li>
+<li>Provides access to ‘negative’ results and failed experiments</li>
+<li>Anyone, anywhere in the world, can access projects at any time,
+enabling simultaneous input from many users</li>
+<li>Offers the possibility of immediate feedback</li>
+<li>Provides thorough evidence of the originality of ideas and
+experiments, reducing the impact of “scooping”</li>
 </ul>
 <p><strong>Open Peer Review</strong></p>
 <ul>
-<li>visibility leads to more constructive reviews</li>
-<li>mitigates against editorial conflicts of interest and/or biases</li>
-<li>mitigates against reviewers conflicts of interest and/or biases</li>
-<li>allows readers to learn/benefit from comments of the reviewers</li>
+<li>Visibility leads to more constructive reviews</li>
+<li>Mitigates against editorial conflicts of interest and/or biases</li>
+<li>Mitigates against reviewer conflicts of interest and/or biases</li>
+<li>Allows readers to learn and benefit from reviewers’ comments</li>
 </ul>
 <p><strong>Open Educational Materials</strong></p>
 <ul>
-<li>Foster collaboration between educators/others</li>
-<li>Show clearly how method was taught (e.g. Carpentries materials)
-which can be reproduces anywhere, anytime</li>
-<li>protects materials from becoming technologically obsolete</li>
-<li>authors preparing the material or contribute all earn credit
-(e.g. GitHub)</li>
-<li>recycle animations and material that is excellent (why reinvent the
-wheel?)</li>
+<li>Fosters collaboration between educators and others</li>
+<li>Clearly demonstrates how methods are taught (e.g., Carpentries
+materials), which can be reproduced anywhere, anytime</li>
+<li>Protects materials from becoming technologically obsolete</li>
+<li>Authors who prepare or contribute materials can receive credit
+(e.g., GitHub)</li>
+<li>Enables the reuse of animations and excellent materials (why
+reinvent the wheel?)</li>
 </ul>
 </div>
 <div class="section level3">
 <h3 id="motivation-money-8-min-teaching">Motivation: Money (8 min teaching)<a class="anchor" aria-label="anchor" href="#motivation-money-8-min-teaching"></a>
 </h3>
-<p>One has to consider the moral objectives that accompany the
-research/publication process: charities/taxpayers pay to fund research,
-these then pay again to access the research they already funded.</p>
-<p>From an economic point of view, scientific outputs generated by
-public research are a public good that everyone should be able to use at
-no cost.</p>
-<p>According to EU report <a href="https://op.europa.eu/en/publication-detail/-/publication/d375368c-1a0a-11e9-8d04-01aa75ed71a1" class="external-link">“Cost-benefit
-analysis for FAIR research data”</a>, €10.2bn is lost every year because
-of not accessible data (plus additional 16bn if accounting for re-use
-and research quality).</p>
-<p>The goals of Open Science is to make research and research data
-available to e.g. charities/taxpayers who funded this research.</p>
-<p>The majority of larger UK and other countries’ funding bodies are now
-making Open Access publication conditional upon funding. As the results
-Open Access is adopted by majority of researcher and is the most
-proliferated part of the OS movement.</p>
+<p>We must consider the ethical implications that accompany the research
+and publication process. Charities and taxpayers fund research, and then
+pay again to access the research they already funded.</p>
+<p>From an economic viewpoint, scientific outputs generated by public
+research are a public good that everyone should be able to use at no
+cost.</p>
+<p>According to an EU report titled “Cost-benefit analysis for FAIR
+research data: <a href="https://op.europa.eu/en/publication-detail/-/publication/d375368c-1a0a-11e9-8d04-01aa75ed71a1" class="external-link">https://op.europa.eu/en/publication-detail/-/publication/d375368c-1a0a-11e9-8d04-01aa75ed71a1</a>”,
+€10.2 billion is lost every year due to inaccessible data (with an
+additional €16 billion lost if we consider data reuse and research
+quality).</p>
+<p>Open Science aims to make research and research data accessible to
+those who funded the research, such as charities and taxpayers.</p>
+<p>The majority of large funding bodies in the UK and other countries
+are now making Open Access publication a condition of funding. As a
+result, Open Access is becoming the most widespread aspect of the Open
+Science movement, adopted by the majority of researchers.</p>
 </div>
 <div class="section level3">
 <h3 id="personal-motivators">Personal motivators<a class="anchor" aria-label="anchor" href="#personal-motivators"></a>
 </h3>
-<p>Open Science is advantageous to many parties involved in science
-(including researcher community, funding bodies, the public even
-journals), which is leading to a push for the widespread adoption of
-Open Science practices.</p>
-<p>Large UK funding bodies such as The Wellcome Trust are big supporters
-of Open Science. We can see with the example of Open Access, that once
-enforced by funders (<em>the stick</em>) there is a wide adoption. But
-what about the personal motivators, <em>the carrots</em>.</p>
-<div id="exercise-1-personal-benefits-of-being-open-4-min" class="callout discussion">
+<p>Open Science offers advantages to many stakeholders in science
+(including the research community, funding bodies, the public, and even
+journals), leading to a push for widespread adoption of Open Science
+practices.</p>
+<p>Large UK funding bodies like The Wellcome Trust are strong supporters
+of Open Science. The example of Open Access demonstrates that
+enforcement by funders (<em>the stick</em>) can lead to widespread
+adoption. But what about the personal motivators, <em>the
+carrots</em>?</p>
+<div id="exercise-1-personal-benefits-of-being-open-5-min" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercise-1-personal-benefits-of-being-open-4-min" class="callout-inner">
+<div id="exercise-1-personal-benefits-of-being-open-5-min" class="callout-inner">
 <h3 class="callout-title">Exercise 1: Personal benefits of being “open”
-(4 min)<a class="anchor" aria-label="anchor" href="#exercise-1-personal-benefits-of-being-open-4-min"></a>
+(5 min)<a class="anchor" aria-label="anchor" href="#exercise-1-personal-benefits-of-being-open-5-min"></a>
 </h3>
 <div class="callout-content">
-<p>Below are some personal benefits to adopting Open Science practices.
-Read through them which of them are the strongest motivators for you.
-Select two the most important/attractive for you and mark them with +1,
-select the two least important for you and mark them with 0</p>
+<p>Open Science practices offer a variety of advantages for researchers.
+Read through the list below and consider which benefits resonate most
+with you.</p>
+<p>Select two the most important/attractive for you and mark them with
++1, select the two least important for you and mark them with 0</p>
 <ul>
 <li>receive higher citations</li>
 <li>complying with funders’ policies</li>
@@ -578,97 +602,86 @@ modellers, ML specialists)</li>
 <li>avoid embarrassment/disaster when you cannot reproduce your
 results</li>
 </ul>
-<p>Can you think of other benefits? How personal benefits of Open
-Science compare to the benefits for the (scientific) society?</p>
+<p>Can you think of other benefits?</p>
+<p>How personal benefits of Open Science compare to the benefits for the
+(scientific) society?</p>
 </div>
 </div>
 </div>
-<p>(3 min teaching)</p>
-<p>The main difference between the public benefits of Open Science
-practices and the personal motivators of outputs creators, that the
-public can benefit almost instantly from the open resources.</p>
-<p>However, the advantages for data creator comes with a delay,
-typically counted in years. For example, building reputation will not
-happen with one dataset, the re-use also will lead to
-citations/collaboration after the next research cycle.</p>
-</div>
-<div class="section level3">
-<h3 id="dora---declaration-of-research-assessment">DORA - declaration of Research Assessment<a class="anchor" aria-label="anchor" href="#dora---declaration-of-research-assessment"></a>
-</h3>
-<div class="section level4">
-<h4 id="principle-of-dora">Principle of DORA:<a class="anchor" aria-label="anchor" href="#principle-of-dora"></a>
-</h4>
-<p>The Declaration on Research Assessment (DORA) emerged from a
-recognition of the limitations and biases associated with journal-based
-metrics, such as Journal Impact Factors. Motivated by a desire to
-promote fair and transparent evaluation practices, DORA advocates for
-assessing research based on its intrinsic merits rather than the venue
-of publication. Its realization signifies a paradigm shift in how we
-measure the impact and significance of scholarly work, emphasizing the
-importance of quality, openness, and broader societal impacts.</p>
-</div>
+<p>(5 min teaching)</p>
+<p>Open Science offers distinct advantages for both researchers and
+society at large. The public benefits from immediate access to research
+outputs, leading to faster scientific progress and innovation.</p>
+<p>For researchers, the benefits take longer time, as open data and
+publications need to time to lead to citations, collaborations, and
+recognition within the scientific community</p>
 </div>
 <div class="section level3">
-<h3 id="adoption-of-funders">Adoption of Funders:<a class="anchor" aria-label="anchor" href="#adoption-of-funders"></a>
+<h3 id="dora-declaration-on-research-assessment">DORA: Declaration on Research Assessment<a class="anchor" aria-label="anchor" href="#dora-declaration-on-research-assessment"></a>
 </h3>
-<p>Funders worldwide are increasingly recognizing the importance of
-embracing DORA principles in their assessment criteria. Institutions
-like Wellcome and Cancer Research UK have led the charge by
-incorporating DORA principles into their funding applications. By
-prioritizing factors such as research outputs, contributions to
-mentorship, and plans for public engagement, these funders are signaling
-a commitment to supporting research that generates meaningful knowledge,
-fosters collaborations, and contributes to societal well-being.</p>
+<p>The San Francisco Declaration on Research Assessment (DORA)
+emphasizes the limitations of using metrics like Journal Impact Factors
+(JIF) to solely evaluate research. DORA advocates for assessing research
+based on its inherent merit and contributions, promoting fairer and more
+transparent evaluation practices. This shift acknowledges the importance
+of research quality, openness, and its broader societal impact.</p>
+</div>
+<div class="section level3">
+<h3 id="funders-embrace-dora-principles">Funders Embrace DORA Principles<a class="anchor" aria-label="anchor" href="#funders-embrace-dora-principles"></a>
+</h3>
+<p>Research funders worldwide are increasingly endorsing DORA
+principles. Leading institutions like Wellcome Trust and Cancer Research
+UK incorporate DORA criteria into their funding applications. These
+funders prioritize research outputs, mentorship contributions, and
+public engagement plans, supporting research that generates valuable
+knowledge, fosters collaboration, and benefits society.</p>
 </div>
 <div class="section level3">
 <h3 id="narrative-cv-as-a-dora-compliant-assessment-tool">Narrative CV as a DORA-Compliant Assessment Tool:<a class="anchor" aria-label="anchor" href="#narrative-cv-as-a-dora-compliant-assessment-tool"></a>
 </h3>
-<p>The Narrative CV offers a DORA-compliant approach to evaluating
-researchers, focusing on key dimensions that reflect the principles of
-DORA:</p>
+<p>The Narrative CV aligns with DORA principles by focusing on key
+dimensions that reflect a researcher’s contributions:</p>
 <ul>
 <li>Generation of Knowledge: Acknowledging diverse outputs such as
 datasets, patents, and software.</li>
 <li>Development of Individuals and Collaborations: Highlighting
 mentorship and collaborative endeavors that enrich the research
 ecosystem.</li>
-<li>Supporting Broader Society and the Economy: Demonstrating the
-societal and economic impacts of research beyond academic circles.</li>
+<li>Societal and Economic Impact: Demonstrating the societal and
+economic impacts of research beyond academic circles.</li>
 <li>Supporting the Research Community: Engaging in open science
 practices and ensuring the accessibility of research outputs.</li>
 </ul>
-<p>In this assessment framework, special attention is paid to Open
-Science practices, ensuring that research outputs are openly available
-to maximize their impact and visibility. Additionally, new metrics such
-as retweets, online views and downloads, discussions, and presence in
-mass media and technology platforms are considered to provide a more
-comprehensive understanding of research impact in today’s digital
-age.</p>
-<p>Embracing Open Practices and adhering to DORA principles not only
-aligns with ethical research conduct but also enhances the credibility
-and impact of scholarly work. As evidenced by the Narrative CV and the
-adoption of DORA principles by leading funders, the research community
-is moving towards a more transparent and equitable assessment paradigm.
-Ultimately, the choice to embrace Open Practices is not only a matter of
-integrity but also a recognition that authenticity and transparency are
-essential drivers of scientific progress. After all, as timestamps
-remind us, faking Open Practices is far more challenging than simply
-adhering to them.</p>
+<p>This framework prioritizes open science practices to maximize
+research impact and visibility. Additionally, new metrics like retweets,
+online views/downloads, discussions, and media coverage are considered,
+providing a more comprehensive understanding of research impact in the
+digital age.</p>
+<p><strong>Why Embrace Open Practices?</strong></p>
+<p>Open Science practices not only uphold ethical research conduct but
+also enhance the credibility and reach of your work. The Narrative CV
+and the adoption of DORA by leading funders exemplify the research
+community’s shift towards a more transparent and equitable assessment
+paradigm. Choosing open practices demonstrates not just integrity, but
+also a recognition that authenticity and transparency are fundamental to
+scientific progress. After all, timestamps and meticulous documentation
+make faking open practices far more difficult than simply adhering to
+them.</p>
 </div>
 <div class="section level3">
-<h3 id="barriers-and-risks-of-os-movement">Barriers and risks of OS movement:<a class="anchor" aria-label="anchor" href="#barriers-and-risks-of-os-movement"></a>
+<h3 id="barriers-and-risks-of-the-open-science-movement">Barriers and risks of the Open Science movement:<a class="anchor" aria-label="anchor" href="#barriers-and-risks-of-the-open-science-movement"></a>
 </h3>
-<div id="exercise-2-why-we-are-not-doing-open-science-already-4-min" class="callout challenge">
+<div id="exercise-2-why-we-are-not-doing-open-science-already-about-5-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-2-why-we-are-not-doing-open-science-already-4-min" class="callout-inner">
+<div id="exercise-2-why-we-are-not-doing-open-science-already-about-5-min" class="callout-inner">
 <h3 class="callout-title">Exercise 2: Why we are not doing Open Science
-already (4 min)<a class="anchor" aria-label="anchor" href="#exercise-2-why-we-are-not-doing-open-science-already-4-min"></a>
+already (about 5 min)<a class="anchor" aria-label="anchor" href="#exercise-2-why-we-are-not-doing-open-science-already-about-5-min"></a>
 </h3>
 <div class="callout-content">
-<p>Discuss Open Science barriers, mention the reasons for not already
-being open:</p>
+<p>Discuss the challenges and potential drawbacks associated with Open
+Science practices.</p>
 </div>
 </div>
 </div>
@@ -677,100 +690,135 @@ being open:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
-<li>sensitive data (anonymising data from administrative health records
-can be difficult)</li>
-<li>IP</li>
-<li>sensitive data</li>
-<li>lack of expertise</li>
-<li>the costs in $ and in time</li>
-<li>novelty of data</li>
-<li>lack of confidence (the fear of critics)</li>
-<li>misuse (fake news)</li>
-<li>it is not mandatory</li>
-<li>lack of credit (publishing negative results is of little benefit to
-you)</li>
+<li>
+<strong>Data Sensitivity:</strong> Anonymizing data from certain
+sources, like administrative health records, can be complex and
+time-consuming.</li>
+<li>
+<strong>Intellectual Property (IP) Concerns:</strong> Researchers
+might hesitate to share data if it could compromise potential patents or
+other intellectual property.</li>
+<li>
+<strong>Misuse of Data:</strong> Open data carries a risk of
+misinterpretation or misuse, potentially leading to the spread of
+misinformation (e.g., “fake news”).</li>
+<li>
+<strong>Lack of Recognition for Negative Results:</strong>
+Publishing negative or inconclusive findings can be less rewarding in
+the current academic evaluation system.</li>
+<li>
+<strong>Time and Cost:</strong> Making research outputs open and
+user-friendly requires time and resources for proper data curation,
+storage, and dissemination. This can be especially challenging for large
+datasets.</li>
+<li>
+<strong>Lack of Expertise:</strong> Researchers might not have the
+necessary skills or training to effectively manage and share data
+openly.</li>
+<li>
+<strong>Fear of Criticism:</strong> The prospect of open peer review
+or public scrutiny can be daunting, leading some researchers to shy away
+from open science practices.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<p>(9 min teaching)</p>
-<p>It may seem obvious that we should adopt open science practices, but
-there are associated challenges with doing so.</p>
-<p>Sensitivity of data is sometimes considered a barrier. Shared data
-needs to be compliant with data privacy laws, leading many to shy away
-from hosting it publicly. Anonymising data to desensitise it can help
-overcome this barrier.</p>
-<p>The potential for intellectual property on research can dissuade some
-from adopting open practices. Again, much can be shared if the data is
-filtered carefully to protect anything relating to intellectual
-property.</p>
-<p>Another risk could be seen with work on Covid19: pre-prints. A
-manuscript hosted publicly prior to peer review, may accelerate access
-to knowledge, but can also be misused and/or misunderstood. This can
-result in political and health decision making based on faulty data,
-which is counter to societies’ best interest.</p>
-<p>One concern is that opening up ones data to the scientific community
-can lead to the identification of errors, which may lead to feelings of
-embarrassment. However, this could be considered an upside - we should
-seek for our work to be scrutinized and errors to be pointed out, and is
-the sign of a competent scientist. One should rather have errors pointed
-out rather than risking that irreproducible data might cause even more
-embarrassment and disaster.</p>
+<p>(8 min teaching)</p>
+<p>There are valid reasons why some researchers hesitate to embrace Open
+Science entirely.</p>
+<p><strong>Data sensitivity</strong> is a major concern. Data privacy
+laws require careful handling of sensitive data, and anonymization can
+be a complex process.</p>
+<p>Anonymising data to desensitise it can help overcome this
+barrier.</p>
+<p><strong>Intellectual property (IP) considerations</strong> are
+another hurdle. Researchers may be hesitant to share data that could
+compromise the patenting or commercialization of their discoveries.
+However, careful data filtering can often address these concerns. For IP
+protection it is the timeline of public disclosure that matters not fact
+making them public.</p>
+<p><strong>Pre-prints</strong>, while valuable for rapid knowledge
+dissemination, can be misused, particularly in fast-moving fields like
+public health research. Unreviewed pre-prints have the potential to
+mislead policymakers and the public if not interpreted with caution.
+This can result in political and health decision making based on faulty
+data, which is counter to societies’ best interest.</p>
+<p>The fear of negative feedback can also be a barrier. However, open
+peer review is a crucial part of the scientific process. Identifying and
+correcting errors through open review strengthens research and fosters a
+culture of transparency.</p>
+<p>We should seek for our work to be scrutinized and errors to be
+pointed out, and is the sign of a competent scientist. One should rather
+have errors pointed out rather than risking that irreproducible data
+might cause even more embarrassment and disaster.</p>
+<p>Lack of Expertise: Researchers might not have the necessary skills or
+training to effectively manage and share data openly.</p>
 <p>One of <strong>the biggest barriers are the costs</strong> involved
-in “being Open”. Firstly, making outputs readily available and usable to
-others takes time and significant effort. Secondly, there are costs of
-hosting and storage. For example, microscopy datasets reach sizes in
-terabytes, making such data accessible for 10 years involves serious
-financial commitment.</p>
+in “being Open”. The <strong>time and financial investment</strong>
+required for Open Science practices can be a significant barrier. Making
+data readily accessible and usable takes effort, and data storage can be
+expensive, especially for large datasets.</p>
+<p>For example, microscopy datasets reach sizes in terabytes, making
+such data accessible for 10 years involves serious financial
+commitment.</p>
 </div>
-<div class="section level1">
-<h1 id="being-fair">Being FAIR<a class="anchor" aria-label="anchor" href="#being-fair"></a>
-</h1>
-<p>We have seen how Open practices can benefit both scientific community
-as a whole and individual practitioner. The wide adoption of Open Access
-principles has resulted in an easy access to recent biomedical
-publications. Unfortunately, the same cannot be said about data and
-software that accompanies those publications.</p>
+<section id="being-fair"><h2 class="section-heading">Being FAIR<a class="anchor" aria-label="anchor" href="#being-fair"></a>
+</h2>
+<hr class="half-width">
+<p>We’ve explored the advantages of Open Science practices for both the
+scientific community and individual researchers. While Open Access has
+made recent biomedical publications readily available, the same
+accessibility often isn’t the case for the underlying data and
+software.</p>
 <div id="what-is-data" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="what-is-data" class="callout-inner">
-<h3 class="callout-title">What is data<a class="anchor" aria-label="anchor" href="#what-is-data"></a>
+<h3 class="callout-title">What is Data?<a class="anchor" aria-label="anchor" href="#what-is-data"></a>
 </h3>
 <div class="callout-content">
-<p>Although scientific data is a very broad term, we still encounter
-groups who (wrongly) believe they do not have data! Data does not mean
-Excel files with recorded measurements from a machine. Data also
-includes:</p>
+<p>The term “scientific data” encompasses a wider range than many might
+initially think. It’s not limited to just numbers in spreadsheets! Data
+can include:</p>
 <ul>
-<li>images, not only from microscopes</li>
-<li>information about biological materials, like strain or patient
-details</li>
-<li>biological models</li>
-<li>recipes, laboratory and measurement protocols</li>
-<li>scripts, analysis procedures, and custom software can also be
-considered data</li>
+<li>
+<strong>Images:</strong> Microscopy images, but also gels, blots,
+and other visual representations of findings.</li>
+<li>
+<strong>Biological Information:</strong> Details about research
+materials, like specific strains, cell lines, or patient
+demographics.</li>
+<li>
+<strong>Biological Models:</strong> Computational models used in
+simulations or analyses.</li>
+<li>
+<strong>Protocols:</strong> Step-by-step procedures for lab
+experiments or data collection methods.</li>
+<li>
+<strong>Code:</strong> Scripts, analysis routines, and custom
+software used to generate results.</li>
 </ul>
-<p>However, there are specific recommendations on how to deal with
-code.</p>
+<p>While there are specific best practices for sharing code, it’s still
+considered a form of research data.</p>
 </div>
 </div>
 </div>
-<p>Let’s have a look how challenging it can be to access and use data
-from published biological papers.</p>
-<div id="exercise-3-impossible-protocol-4-min" class="callout challenge">
+<p>Let’s delve into the challenges associated with accessing and using
+data from published biological research.</p>
+<div id="exercise-3-impossible-protocol" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-3-impossible-protocol-4-min" class="callout-inner">
-<h3 class="callout-title">Exercise 3: Impossible protocol (4 min)<a class="anchor" aria-label="anchor" href="#exercise-3-impossible-protocol-4-min"></a>
+<div id="exercise-3-impossible-protocol" class="callout-inner">
+<h3 class="callout-title">Exercise 3: Impossible protocol<a class="anchor" aria-label="anchor" href="#exercise-3-impossible-protocol"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min breakout, plus 10 talking about both problems)</p>
 <p>You need to do a western blot to identify Titin proteins, the largest
 proteins in the body, with a molecular weight of 3,800 kDa. You found an
 antibody sold by Sigma Aldrich that has been validated in western blots
@@ -794,7 +842,7 @@ Reusable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>Ref 17 will lead you to <a href="https://doi.org/10.1002/ana.24102" class="external-link">this paper</a>, which first of
@@ -842,7 +890,7 @@ data column.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ul>
 <li>Finding the right table and column containing the relevant data is
@@ -862,26 +910,36 @@ Python.</li>
 </div>
 </div>
 </div>
-<p>(29 min teaching)</p>
-<p>The above examples illustrate the typical challenges in accessing
-research data and software. Firstly, data/protocols/software often do
-not have an identity of their own, but only accompany a publication.
-Second, they are not easily accessible or reusable, for example, all the
-details are inside one supporting information PDF file. Such file
-includes “printed” numerical table or even source code, both of which
-need to be “re-typed” if someone would like to use them. Data are shared
-in proprietary file format specific to a particular vendor and not
-accessible if one does not have a particular software that accompanies
-the equipment. Finally, data files are provided without detailed
-description other than the whole article text.</p>
+<p><strong>The above examples illustrate the typical challenges in
+accessing research data and software.</strong></p>
+<p>Firstly, data, protocols, and software often lack a distinct
+identity, existing only as supplements to publications.</p>
+<p>Second, accessibility and reusability are often compromised. For
+instance, all details might be buried within a single supporting
+information PDF file. These files often contain “printed” numerical
+tables or even source code, both of which require manual re-entry for
+use by others. Additionally, data may be shared in proprietary file
+formats specific to a particular vendor, inaccessible without the
+accompanying software. Finally, data files are often provided without
+detailed descriptions beyond the full article text, hindering
+reusability.</p>
+<p>In our examples, the protocol was difficult to <strong>find</strong>
+(the loops), <strong>access</strong> (paywall), and
+<strong>reuse</strong> due to a lack of necessary details (dead-end).
+Similarly, in the second example, the data were not
+<strong>interoperable</strong> or <strong>reusable</strong> as they were
+only available as a figure graph.</p>
+<p>To address these problems, the FAIR principles were designed.</p>
 <p>In our examples, the protocol was difficult to <strong>find</strong>
 (the loops), difficult to <strong>access</strong> (pay wall), and not
-<strong>reusable</strong> as it lacked the necessary details (dead-end).
-In the second example the data were not <strong>interoperable</strong>
-and <strong>reusable</strong> as their were only available as a figure
-graph.</p>
+<strong>reusable</strong> as it lacked the necessary details
+(dead-end).</p>
+<p>In the second example the data were not
+<strong>interoperable</strong> and <strong>reusable</strong> as their
+were only available as a figure graph.</p>
 <p>To avoid such problems FAIR principles were designed.</p>
 <p><img src="./fig/FAIR.png" alt="Figure 2. FAIR principles" class="figure"> After <a href="https://commons.wikimedia.org/wiki/File:FAIR_data_principles.jpg" class="external-link">SangyaPundir</a></p>
+<p>(10 min teaching)</p>
 <div id="fair-principles" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -890,46 +948,45 @@ graph.</p>
 <h3 class="callout-title">FAIR Principles<a class="anchor" aria-label="anchor" href="#fair-principles"></a>
 </h3>
 <div class="callout-content">
-<p>In 2016, the <a href="https://www.nature.com/articles/sdata201618" class="external-link">FAIR Guiding
-Principles for scientific data management and stewardship</a> were
-published in Scientific Data. The original guideline focused on
-“machine-actionability” - the ability of computer systems to operate on
-data with minimal human intervention. However, now the focus has shifted
-to making data accessible from a human perspective, and not an automated
-one (mostly due to the lack of user friendly tools that could help deal
-with standards and structured metadata).</p>
-<p><strong>Findable</strong>: Easy to find data and metadata for both
-humans and computers. Automatic and reliable discovery of datasets and
-services depends on machine-readable persistent identifiers (PIDs) and
-metadata.</p>
-<p><strong>Accessible</strong>: (Meta)data should be retrievable by
-their identifier using a standardized and open communications protocol
-(including authentication and authorisation). Metadata should be
-available even when the data are no longer available.</p>
-<p><strong>Interoperable</strong>: Data should be able to be combined
-with and used with other data or tools. The format of the data should be
-open and interpretable for various tools. It applies both to data and
-metadata, (meta)data should use vocabularies that follow FAIR
-principles.</p>
-<p><strong>Re-usable</strong>: FAIR aims at optimizing the reuse of
-data. Metadata and data should be well-described so that they can be
-replicated and/or combined in different settings. The reuse of
-(meta)data should be stated with clear and accessible license(s).</p>
+<p>In 2016, the FAIR Guiding Principles for scientific data management
+and stewardship: <a href="https://www.nature.com/articles/sdata201618" class="external-link">https://www.nature.com/articles/sdata201618</a>
+were published in Scientific Data. The original guideline emphasized
+“machine-actionability” - the ability of computer systems to
+automatically process data. However, the focus has shifted towards
+human-centric accessibility, acknowledging the limitations of
+user-friendly tools for standardized metadata.</p>
+<p><strong>Findable:</strong> Data and metadata should be easily
+discoverable by both humans and computers. Standardized and persistent
+identifiers (PIDs) and machine-readable metadata are crucial for
+automatic dataset and service discovery.</p>
+<p><strong>Accessible:</strong> (Meta)data should be retrievable using a
+standardized and open communication protocol (including authentication
+and authorization) based on their identifier. Even if the data itself
+becomes unavailable, the metadata should remain accessible.</p>
+<p><strong>Interoperable:</strong> Data should be combinable and usable
+with other data or tools. Open and interpretable data formats are
+essential for various tools. Both data and metadata should utilize
+vocabularies that follow FAIR principles to promote
+interoperability.</p>
+<p><strong>Reusable:</strong> FAIR aims to optimize data reuse.
+Well-described metadata and data facilitate replication and integration
+in different contexts. Clear and accessible licenses should be provided
+to govern (meta)data reuse.</p>
 </div>
 </div>
 </div>
-<div class="section level2">
-<h2 id="fair-in-biological-practice">FAIR in biological practice<a class="anchor" aria-label="anchor" href="#fair-in-biological-practice"></a>
+</section><section id="fair-in-biological-practice"><h2 class="section-heading">FAIR in biological practice<a class="anchor" aria-label="anchor" href="#fair-in-biological-practice"></a>
 </h2>
+<hr class="half-width">
 <div class="section level4">
 <h4 id="findable-accessible">Findable &amp; Accessible<a class="anchor" aria-label="anchor" href="#findable-accessible"></a>
 </h4>
-<p>Deposit data to an external, reputable public repository.</p>
-<p>Repositories provide persistent identifiers (PIDs), catalogue
-options, advanced metadata searching, and download statistics. Some
-repositories can also host private data or provide embargo periods,
-meaning access to all data can be delayed.</p>
-<p>There are general “data agnostic” repositories, for example:</p>
+<p>Deposit your data in a reputable external public repository.</p>
+<p>These repositories provide persistent identifiers (PIDs) for easy
+discovery, along with options for cataloging, advanced metadata
+searching, and download statistics. Some repositories can even host
+private data or offer embargo periods to delay full data access.</p>
+<p><strong>General “data agnostic” repositories include:</strong></p>
 <ul>
 <li>
 <a href="http://datadryad.org" class="external-link">Dryad</a>,</li>
@@ -940,7 +997,7 @@ meaning access to all data can be delayed.</p>
 <li>
 <a href="http://thedata.org" class="external-link">Dataverse</a>.</li>
 </ul>
-<p>Or domain specific, for example:</p>
+<p>*Domain-specific examples include:**</p>
 <ul>
 <li>
 <a href="https://www.uniprot.org/" class="external-link">UniProt</a> protein data,</li>
@@ -961,34 +1018,32 @@ episode.</em></p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>What are persistent identifiers (PIDs)</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
-<p>A persistent identifier is a long-lasting reference to a digital
-resource. Typically it has two components:</p>
+<p>A persistent identifier (PID) is a long-lasting reference to a
+digital resource. It typically consists of two parts:</p>
 <ul>
-<li>a service that locates the resource over time even when its location
-changes</li>
-<li>and a unique identifier (that distinguishes the resource or concept
-from others).</li>
+<li>A service that locates the resource over time, even if its location
+changes.</li>
+<li>A unique identifier that distinguishes the resource or concept from
+others.</li>
 </ul>
-<p>Persistent identifiers aim to solve the problem of the persistence of
-accessing cited resource, particularly in the field of academic
-literature. All too often, web addresses (links) changes over time and
-fail to take you to the referenced resource you expected.</p>
-<p>There are several services and technologies (schemes) that provide
-PIDs for objects (whether digital, physical or abstract). One of the
-most popular is <strong>Digital Object Identifier <a href="https://www.doi.org/" class="external-link">(DOI)</a></strong>, recognizable by the
-prefix doi.org in the web links. For example: <a href="https://doi.org/10.1038/sdata.2016.18" class="external-link">https://doi.org/10.1038/sdata.2016.18</a>
-resolves to the location of the paper that describes FAIR
-principles.</p>
-<p>Public repositories often maintain web addresses of their content in
-a stable form which follow the convention <a href="http://repository.adress/identifier" class="external-link uri">http://repository.adress/identifier</a>; these are often
-called permalinks. For well establish services, permalinks can be
-treated as PIDs.</p>
-<p>For example: <a href="http://identifiers.org/SO:0000167" class="external-link">http://identifiers.org/SO:0000167</a>
-resolves to a page defining promoter role, and can be used to annotate
-part of a DNA sequence as performing such a role during
-transcription.</p>
+<p>PIDs address the problem of accessing cited resources, particularly
+in academic literature, where web addresses (links) often change over
+time, leading to broken links.</p>
+<p>Several services and technologies (schemes) provide PIDs for various
+objects (digital, physical, or abstract). One of the most common is the
+Digital Object Identifier (DOI) (<a href="https://www.doi.org/" class="external-link">https://www.doi.org/</a>), recognizable by
+the prefix “doi.org” in web links. For instance, this link (<a href="https://pubmed.ncbi.nlm.nih.gov/26978244/" class="external-link">https://pubmed.ncbi.nlm.nih.gov/26978244/</a>)
+resolves to the paper that describes FAIR principles.</p>
+<p>Public repositories often maintain stable web addresses for their
+content, following the convention
+<code>http://repository.address/identifier</code>. These are often
+called permalinks. For well-established services, permalinks can be
+considered PIDs.</p>
+<p>For example, this link <a href="http://identifiers.org/SO:0000167" class="external-link">http://identifiers.org/SO:0000167</a>
+points to a page defining the promoter role and can be used to annotate
+a DNA sequence performing such a role during transcription.</p>
 </div>
 </div>
 </div>
@@ -998,41 +1053,43 @@ transcription.</p>
 <h4 id="interoperable">Interoperable<a class="anchor" aria-label="anchor" href="#interoperable"></a>
 </h4>
 <ul>
-<li>Use common/free file formats (can be domain specific)</li>
-<li>Always use .csv or .xls files for numerical data.
-<strong>Never</strong> share data tables as word or pdf,</li>
-<li>Provide underlying numerical data for all plots and graphs</li>
-<li>Convert proprietary binary formats to the open ones. For example
-convert Snapgene to Genbank, microscopy multistack images to
-OME-TIFF</li>
+<li>Use common and ideally free file formats (domain-specific options
+might exist).</li>
+<li>Always use <code>.csv</code> or <code>.xls</code> for numerical
+data. <strong>Never</strong> share data tables as Word or PDF
+documents.</li>
+<li>Provide the underlying numerical data for all plots and graphs.</li>
+<li>Convert proprietary binary formats to open formats. For example,
+convert Snapgene to GenBank, or microscopy multistack images to
+OME-TIFF.</li>
 </ul>
 </div>
 <div class="section level4">
 <h4 id="reusable">Reusable<a class="anchor" aria-label="anchor" href="#reusable"></a>
 </h4>
-<ol style="list-style-type: decimal">
-<li>Describe your data well / provide good metadata</li>
-</ol>
+<p>Describe your data well with comprehensive metadata.</p>
 <ul>
-<li>write README file describing the data</li>
-<li>user descriptive column headers for the data tables</li>
-<li>tidy data tables, make them analysis friendly</li>
-<li>provide as many details as possible (prepare good metadata)</li>
-<li>use (meta)data formats (e.g. SBML, SBOL)</li>
-<li>follow Minimum Information Standards</li>
+<li>Write a README file that describes your data.</li>
+<li>Use descriptive column headers in your data tables.</li>
+<li>Organize your data tables for analysis-friendliness (tidy data
+principles).</li>
+<li>Provide as much detail as possible through rich metadata.</li>
+<li>Utilize appropriate metadata formats (e.g., SBML, SBOL).</li>
+<li>Adhere to Minimum Information Standards (MIS) for your field.</li>
 </ul>
-<p><em>Describing data in sufficient details is the most challenging
-part of the data sharing process. We will cover this in more detail
-later on.</em></p>
+<p>Describing data in sufficient detail is often the most challenging
+aspect of data sharing. We’ll cover this in more detail later.</p>
 <ol start="2" style="list-style-type: decimal">
-<li>Attach license files.</li>
+<li>Include license files.</li>
 </ol>
-<p>Licenses explicitly declare conditions and terms by which data and
-software can be re-used. Here, we recommend:</p>
+<p>Licenses explicitly state the conditions and terms under which your
+data and software can be reused. Here are some recommendations:</p>
 <ul>
-<li>for data <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons
-Attribution (CC BY)</a> license,</li>
-<li>for code a permissive open source license such as the <a href="https://opensource.org/licenses/MIT" class="external-link">MIT</a>, <a href="https://opensource.org/licenses/BSD-2-Clause" class="external-link">BSD</a>, or <a href="http://www.apache.org/licenses/" class="external-link">Apache license</a>.</li>
+<li>For data, we recommend the <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons
+Attribution (CC BY)</a> license.</li>
+<li>For code, consider a permissive open-source license such as <a href="https://opensource.org/licenses/MIT" class="external-link">MIT</a>, <a href="https://opensource.org/licenses/BSD-2-Clause" class="external-link">BSD</a>, or Apache
+<a href="http://www.apache.org/licenses/" class="external-link">Apache license</a>
+licenses.</li>
 </ul>
 <div id="copyright-and-data" class="callout">
 <div class="callout-square">
@@ -1042,28 +1099,30 @@ Attribution (CC BY)</a> license,</li>
 <h3 class="callout-title">Copyright and data<a class="anchor" aria-label="anchor" href="#copyright-and-data"></a>
 </h3>
 <div class="callout-content">
-<p>Software code (the text) automatically gets the default copyright
-protection which prevents others from copying or modifying it. Only by
-adding the explicit licence you can permit re-use by others.</p>
+<p>Software code (the text itself) automatically receives default
+copyright protection, preventing others from copying or modifying it.
+Only by adding an explicit license can you permit others to reuse
+it.</p>
 <p>Data, being factual, cannot be copyrighted. <strong>So why, do we
 need a license?</strong></p>
-<p>While the data itself cannot be copyrighted, the way how it is
-presented can be. The extend to which it is protected needs ultimately
-to be settled by the court.</p>
-<p>The “good actors” will restrain from using your data to avoid “court”
-risks. The “bad actors” will either ignore the risk or can afford the
-lawyers fees.</p>
+<p>While the data itself cannot be copyrighted, the way it’s presented
+can be. The extent to which it’s protected ultimately needs to be
+settled by a court.</p>
+<p>“Good actors” will refrain from using your data to avoid legal risks.
+However, “bad actors” might ignore the risk or have the resources to
+fight legal battles.</p>
 </div>
 </div>
 </div>
-<div id="exercise-4-example-of-fair-data-4-min" class="callout challenge">
+<div id="exercise-4-example-of-fair-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-4-example-of-fair-data-4-min" class="callout-inner">
-<h3 class="callout-title">Exercise 4: Example of FAIR data (4 min)<a class="anchor" aria-label="anchor" href="#exercise-4-example-of-fair-data-4-min"></a>
+<div id="exercise-4-example-of-fair-data" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Example of FAIR data<a class="anchor" aria-label="anchor" href="#exercise-4-example-of-fair-data"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min breakout, plus 3 min showing answers)</p>
 <p>Zenodo is general data repository. Have a look at the dataset record
 with COVID-19 data: <a href="https://doi.org/10.5281/zenodo.6339631" class="external-link">https://doi.org/10.5281/zenodo.6339631</a></p>
 <p>Identify how each of F.A.I.R principles has been met.<br><em>Hint: navigate to linked github record to easily access the README
@@ -1076,7 +1135,7 @@ file</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ul>
 <li>F: The dataset is identified by a PID (doi). It can be found by its
@@ -1095,56 +1154,53 @@ Licence</li>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section level2">
-<h2 id="fair-and-you-3-min">FAIR and You (3 min)<a class="anchor" aria-label="anchor" href="#fair-and-you-3-min"></a>
-</h2>
 <p>The FAIR acronym is sometimes accompanied with the following labels:
 * Findable - Citable * Accessible - Trackable and countable *
 Interoperable - Intelligible * Reusable - Reproducible</p>
-<p>## Solution</p>
 <ul>
-<li>Findable data have their own identity, so they can be easily cited
-and secure the credits to the authors</li>
-<li>Data accessibility over the Internet using standard protocols can be
-easily monitored (for example using Google analytics). This results in
-metrics on data popularity or even geo-locations of data users.</li>
-<li>Interoperable data can benefit the future you, for example you will
-be able to still read your data even when you no longer have access to
-the specialized, vendor specific software with which you worked with
-them before. Also the future you may not remember abreviations and
-ad-hoc conventions you used before (Intelligible).</li>
-<li>Well documented data should contain all the details necessary to
-reproduce the experiments, helping the future you or someone taking over
-from you in the laboratory.</li>
-<li>Saves time and money.</li>
+<li>
+<strong>Findable - Citable:</strong> Findable data has a unique
+identifier, ensuring proper attribution to the creators.</li>
+<li>
+<strong>Accessible - Trackable and Countable:</strong> Accessible
+data allows for monitoring usage statistics (e.g., downloads, user
+locations) to understand its reach and impact.</li>
+<li>
+<strong>Interoperable - Intelligible:</strong> Interoperable data is
+understandable not only by current users but also by future users, even
+if they lack access to the specific software used for analysis. This is
+achieved through the use of standard formats and clear documentation.
+The future you may not remember abreviations and ad-hoc conventions you
+used before</li>
+<li>
+<strong>Reusable - Reproducible:</strong> Well-documented data with
+sufficient detail allows for reproducing the experiments, facilitating
+verification and building upon existing knowledge. This saves time and
+resources.</li>
 </ul>
 </div>
-<div class="section level2">
-<h2 id="fair-vs-open-science-3-min-teaching">FAIR vs Open Science (3 min teaching)<a class="anchor" aria-label="anchor" href="#fair-vs-open-science-3-min-teaching"></a>
+</section><section id="fair-vs-open-science-2-min-teaching"><h2 class="section-heading">FAIR vs Open Science (2 min teaching)<a class="anchor" aria-label="anchor" href="#fair-vs-open-science-2-min-teaching"></a>
 </h2>
-<p><strong>FAIR does not mean Open</strong>. Actually, FAIR guideline
-only requires that the metadata record is always accessible. For
-example, the existence of the data can be known (their metadata), the
-data can have easy to use PID to reference them, but the actual data
-files can only be downloaded after the login and authorization.</p>
-<p>However, if data are already in the FAIR form, i.e. accessible over
-the internet, in interoperable format and well documented, then it is
-almost effortless to “open” the dataset and make it available to the
-whole public. The data owner can do it any time when he no longer
-perceives oppening as a risk.</p>
-<p>At the same time, Open data which does not follow FAIR guidelines
-have little value. If they are not well described, not in open formats
-then they are not going to be re-used even if they were made “open” by
-posting them on some website.</p>
-<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout challenge">
+<hr class="half-width">
+<p><strong>FAIR is not synonymous with Open.</strong> FAIR guidelines
+primarily require open access to the metadata record, describing the
+data’s existence, a user-friendly PID for reference, and potentially
+some restrictions on accessing the actual data files (e.g., login
+required).</p>
+<p>However, FAIR data is well-positioned for becoming Open data. Since
+it’s already accessible online, uses interoperable formats, and comes
+with thorough documentation, transitioning to fully open access becomes
+a relatively simple step whenever the data owner decides it’s no longer
+a risk.</p>
+<p>Conversely, Open data lacking FAIR characteristics holds minimal
+value. Poorly described data in non-standard formats remains unusable
+even if it’s publicly available.</p>
+<div id="open-science-and-fair-quiz-5-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="open-science-and-fair-quiz-5-min-runs-over-break" class="callout-inner">
-<h3 class="callout-title">Open Science and FAIR Quiz (5 min + runs over
-break)<a class="anchor" aria-label="anchor" href="#open-science-and-fair-quiz-5-min-runs-over-break"></a>
+<div id="open-science-and-fair-quiz-5-min" class="callout-inner">
+<h3 class="callout-title">Open Science and FAIR Quiz (5 min)<a class="anchor" aria-label="anchor" href="#open-science-and-fair-quiz-5-min"></a>
 </h3>
 <div class="callout-content">
 <p>Which of the following statements about the OS and FAIR are
@@ -1180,7 +1236,7 @@ be FAIR.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ul>
 <li>Open Science relies strongly on the Internet T</li>
@@ -1222,10 +1278,9 @@ be FAIR. F</li>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> <span class="ex">-</span> [Ted talk supporting OS]<span class="er">(</span><span class="ex">https://www.youtube.com/watch?v=c-bemNZ-IqA</span><span class="kw">)</span></span></code></pre>
 </div>
 </div>
-</div>
-<div class="section level2">
-<h2 id="attribution">Attribution<a class="anchor" aria-label="anchor" href="#attribution"></a>
+</section><section id="attribution"><h2 class="section-heading">Attribution<a class="anchor" aria-label="anchor" href="#attribution"></a>
 </h2>
+<hr class="half-width">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1255,10 +1310,9 @@ be FAIR. F</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</div>
-</div></section><section id="aio-02-Intro-to-metadata"><p>Content from <a href="02-Intro-to-metadata.html">Introduction to metadata</a></p>
+</section></section><section id="aio-02-Intro-to-metadata"><p>Content from <a href="02-Intro-to-metadata.html">Introduction to metadata</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-22 |
         
         <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/02-Intro-to-metadata.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1283,7 +1337,7 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Recognise what metadata is</li>
+<li>Recognize what metadata is</li>
 <li>Distinguish different types of metadata</li>
 <li>Know how to decide what to include in metadata</li>
 </ul>
@@ -1292,25 +1346,26 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>(5 min teaching)</p>
+<p>(13 min teaching)</p>
 <section id="what-is-or-are-metadata"><h2 class="section-heading">What is (or are) metadata?<a class="anchor" aria-label="anchor" href="#what-is-or-are-metadata"></a>
 </h2>
 <hr class="half-width">
-<p>Simply put, metadata is data about the data. Sound confusing? Lets
-clarify: metadata is the <em>description of data</em>. It allows deeper
-understanding of data and provides insight for its interpretation.
-Hence, your metadata should be considered as important as your data.
-Further, metadata plays a very important role in making your data FAIR.
-It should be continuously added to your research data (not just at the
-beginning or end of a project!). Metadata can be produced in an
-automated way (e.g. when you capture a microscopy image usually the
-accompanying software saves metadata as part of it) or manually.</p>
+<p>Simply put, metadata is data about the data. Sound confusing? Let’s
+clarify: metadata is the <em>description of data</em>. It allows a
+deeper understanding of data and provides insight for its
+interpretation. Hence, your metadata should be considered as important
+as your data. Furthermore, metadata plays a very important role in
+making your data FAIR. It should be continuously added to your research
+data (not just at the beginning or end of a project!). Metadata can be
+produced in an automated way (e.g., when you capture a microscopy image,
+usually the accompanying software saves metadata as part of it) or
+manually.</p>
 <ins>
 Let’s take a look at an example:
 </ins>
 <p>This is a confocal microscopy image of a <em>C. elegans</em> nematode
 strain used as a proteostasis model (Pretty! Isn’t it?). The image is
-part of the raw data associated to <a href="https://doi.org/10.1016/j.celrep.2019.12.078" class="external-link">Goya et al.,
+part of the raw data associated with <a href="https://doi.org/10.1016/j.celrep.2019.12.078" class="external-link">Goya et al.,
 2020</a>, which was deposited in a Public Omero Server<br><a href="https://publicomero.bio.ed.ac.uk/webclient/?show=project-58" class="external-link">Project</a><br><a href="https://publicomero.bio.ed.ac.uk/webclient/?show=dataset-231" class="external-link">Figure1
 set</a></p>
 <p><img src="./fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600" class="figure"><em>Figure credits: María Eugenia Goya</em></p>
@@ -1382,50 +1437,51 @@ NL5901; C. elegans</p>
 </section><section id="types-of-metadata"><h2 class="section-heading">Types of metadata<a class="anchor" aria-label="anchor" href="#types-of-metadata"></a>
 </h2>
 <hr class="half-width">
-<p>According to <a href="https://howtofair.dk/" class="external-link">How to FAIR</a> we can
+<p>According to <a href="https://howtofair.dk/" class="external-link">How to FAIR</a>, we can
 distinguish between three main types of metadata:</p>
 <ul>
 <li>
-<strong>Administrative metadata:</strong> data about a project or
-resource that are relevant for managing it; E.g. project/resource owner,
-principal investigator, project collaborators, funder, project period,
-etc. They are usually assigned to the data, before you collect or create
-them.</li>
+<strong>Administrative metadata:</strong> Data about a project or
+resource that is relevant for managing it; for example, project/resource
+owner, principal investigator, project collaborators, funder, project
+period, etc. They are usually assigned to the data before you collect or
+create them.</li>
 <li>
-<strong>Descriptive or citation metadata:</strong> data about a
-dataset or resource that allow people to discover and identify it; E.g.
-authors, title, abstract, keywords, persistent identifier, related
-publications, etc.</li>
+<strong>Descriptive or citation metadata:</strong> Data about a
+dataset or resource that allows people to discover and identify it; for
+example, authors, title, abstract, keywords, persistent identifier,
+related publications, etc.</li>
 <li>
-<strong>Structural metadata:</strong> data about how a dataset or
-resource came about, but also how it is internally structured. E.g. the
-unit of analysis, collection method, sampling procedure, sample size,
-categories, variables, etc. Structural metadata have to be gathered by
-the researchers according to best practice in their research community
-and will be published together with the data.</li>
+<strong>Structural metadata:</strong> Data about how a dataset or
+resource came about, but also how it is internally structured. For
+example, the unit of analysis, collection method, sampling procedure,
+sample size, categories, variables, etc. Structural metadata have to be
+gathered by the researchers according to best practice in their research
+community and will be published together with the data.</li>
 </ul>
 <p>Descriptive and structural <strong>metadata should be added
 continuously</strong> throughout the project.</p>
 <div class="section level3">
 <h3 id="examples-of-metadata">Examples of metadata<a class="anchor" aria-label="anchor" href="#examples-of-metadata"></a>
 </h3>
-<p>Here we have an excel spreadsheet that contains project metadata for
-a made-up experiment of plant metabolites <img src="./fig/04-metadatafull_spreadsheet_solution.png" alt="Metadata in data table example" class="figure"><em>Figure credits: Tomasz
-Zielinski and Andrés Romanowski</em></p>
+<p>ere we have an Excel spreadsheet that contains project metadata for a
+made-up experiment of plant metabolites:</p>
+<p><img src="./fig/04-metadatafull_spreadsheet_solution.png" alt="Metadata in data table example" class="figure"><br><em>Figure credits: Tomasz Zielinski and Andrés Romanowski</em></p>
 <p>Different types of metadata (administrative, descriptive, structural)
-are present in this example.</p>
+are present in this example:</p>
 <ul>
 <li>Administrative metadata marked in blue</li>
 <li>Descriptive metadata marked in orange</li>
 <li>Structural metadata marked in green</li>
 </ul>
-<p>Embedding metadata with your data as in the example is very useful
-technique as the metadata remain joined to the data.<br>
-As you can see typically the metadata can be found in column headers
-(eg. Strain, Media) or as key value pairs (eg. Funder, Protocols)</p>
+<p>Embedding metadata with your data as in the example is a very useful
+technique as the metadata remain joined to the data. As you can see,
+typically the metadata can be found in column headers (e.g., Strain,
+Media) or as key-value pairs (e.g., Funder, Protocols).</p>
 <p>(6 min teaching)</p>
-<p>Another form of storing metadata is creation of README file.</p>
-<p>For example check the README files of two datasets</p>
+<p>Another form of storing metadata is the creation of a README
+file.</p>
+<p>For example, check the README files of two datasets:</p>
 <ul>
 <li><a href="https://github.com/Boehmin/NMJ_analysis" class="external-link">NMJ
 analysis</a></li>
@@ -1443,9 +1499,9 @@ wastewater data</a></li>
 <div class="callout-content">
 <p>What is “data” and what is “metadata” can be a matter of perspective:
 Some researchers’ metadata can be other researchers’ data.</p>
-<p>For example, a funding body is categorised as typical administrative
-metadata, however, it can be used to calculate numbers of public
-datasets per funder and then used to compare effects of different
+<p>For example, a funding body is categorized as typical administrative
+metadata; however, it can be used to calculate numbers of public
+datasets per funder and then used to compare the effects of different
 funders’ policies on open practices.</p>
 </div>
 </div>
@@ -1454,24 +1510,24 @@ funders’ policies on open practices.</p>
 </section><section id="adding-metadata-to-your-experiments"><h2 class="section-heading">Adding metadata to your experiments<a class="anchor" aria-label="anchor" href="#adding-metadata-to-your-experiments"></a>
 </h2>
 <hr class="half-width">
-<p>Good metadata are crucial for assuring re-usability of your outcomes.
-Adding metadata is also a very time-consuming process if done manually,
-so collecting metadata should be done incrementally during your
-experiment.</p>
-<p>As we saw metadata can take many forms from as simple as including a
-ReadMe.txt file, by embedding them inside the Excel files, to using
-domain specific metadata standards and formats.</p>
+<p>Good metadata is crucial for assuring the reusability of your
+outcomes. Adding metadata is also a very time-consuming process if done
+manually, so collecting metadata should be done incrementally during
+your experiment.</p>
+<p>As we saw, metadata can take many forms, from as simple as including
+a ReadMe.txt file, embedding them inside the Excel files, to using
+domain-specific metadata standards and formats.</p>
 <p>But, * <strong>What should be included in metadata?</strong> *
 <strong>What terms should be used in descriptions?</strong></p>
-<div id="exercise-1-what-to-include---discussion-5-minutes" class="callout challenge">
+<div id="exercise-1-what-to-include---discussion" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-1-what-to-include---discussion-5-minutes" class="callout-inner">
-<h3 class="callout-title">Exercise 1: What to include - discussion (5
-minutes)<a class="anchor" aria-label="anchor" href="#exercise-1-what-to-include---discussion-5-minutes"></a>
+<div id="exercise-1-what-to-include---discussion" class="callout-inner">
+<h3 class="callout-title">Exercise 1: What to include - discussion<a class="anchor" aria-label="anchor" href="#exercise-1-what-to-include---discussion"></a>
 </h3>
 <div class="callout-content">
+<p>(5 minutes breakout + 7 discussing results)</p>
 <p>Think of the data you generate in your projects, and imagine you are
 going to share them.</p>
 <p>What information would another researcher need to understand or
@@ -1519,20 +1575,33 @@ statistical tests used, seed for randomisation</li>
 <hr class="half-width">
 <p>For many assay methods and experiment types, there are defined
 recommendations and guidelines called <strong>Minimal Information
-Standards</strong>.</p>
+Standards (MIS)</strong>.</p>
 <p>The minimum information standard is a set of guidelines for reporting
-data derived by relevant methods in biosciences. If followed, it ensures
-that the data can be easily verified, analysed and clearly interpreted
-by the wider scientific community. Keeping with these recommendations
-also facilitates the foundation of structuralized databases, public
-repositories and development of data analysis tools.</p>
-<p>Individual minimum information standards are brought by the
-communities of cross-disciplinary specialists focused on issues of the
-specific method used in experimental biology.</p>
-<p>Minimum Information for Biological and Biomedical Investigations <a href="https://fairsharing.org/collection/MIBBI" class="external-link">(MIBBI)</a> is the
-collection of the most known standards.</p>
-<p><img src="./fig/02-MinimumInformationStandarts.png" alt="Minimum information standards" class="figure"> Figure. Some of the MIBBI minimum
-information standards from fairsharing.org</p>
+data derived by relevant methods in the biosciences. Following these
+guidelines ensures that the data can be easily:</p>
+<ul>
+<li><strong>Verified</strong></li>
+<li><strong>Analyzed</strong></li>
+<li>
+<strong>Clearly interpreted</strong> by the wider scientific
+community.</li>
+</ul>
+<p>Adhering to these recommendations also facilitates the foundation
+of:</p>
+<ul>
+<li>Structured databases</li>
+<li>Public repositories</li>
+<li>Development of data analysis tools</li>
+</ul>
+<p>Individual minimum information standards are developed by communities
+of cross-disciplinary specialists focused on specific methods used in
+experimental biology.</p>
+<p><strong>Minimum Information for Biological and Biomedical
+Investigations (MIBBI)</strong> <a href="https://fairsharing.org/collection/MIBBI" class="external-link">MIBBI</a> is the
+collection of the most well-known standards.</p>
+<p><img src="./fig/02-MinimumInformationStandarts.png" alt="Minimum information standards" class="figure"><br>
+Figure. Some of the MIBBI minimum information standards from
+fairsharing.org</p>
 <p><a href="https://fairsharing.org/standards/" class="external-link">FAIRSharing</a> offers
 excellent search service for finding standards</p>
 <div id="exercise-2-minimal-information-standard-example-5-min" class="callout challenge">
@@ -1544,10 +1613,12 @@ excellent search service for finding standards</p>
 example (5 min)<a class="anchor" aria-label="anchor" href="#exercise-2-minimal-information-standard-example-5-min"></a>
 </h3>
 <div class="callout-content">
-<p>Look at <strong><em>Minimum Information about a Neuroscience
-Investigation (MINI) Electrophysiology</em></strong> <a href="https://www.nature.com/articles/npre.2008.1720.1.pdf" class="external-link">Gibson, F.
-et al. Nat Prec (2008)</a>. which contains recommendations for reporting
-the use of electrophysiology in a neuroscience study.<br>
+<p>(about 4 + 2 discussion)</p>
+<p>Look at the document titled “<strong>Minimum Information About a
+Neuroscience Investigation (MINI) Electrophysiology</strong>” (Gibson,
+F. et al. Nat Prec (2008): <a href="https://www.nature.com/articles/npre.2008.1720.1.pdf" class="external-link">https://www.nature.com/articles/npre.2008.1720.1.pdf</a>),
+which contains recommendations for reporting the use of
+electrophysiology in a neuroscience study.<br>
 (<em>Neuroscience (or neurobiology) is the scientific study of the
 nervous system</em>).</p>
 <p>Scroll to <em>Reporting requirement</em> and decide which of the
@@ -1589,17 +1660,18 @@ points 1-8 are:</p>
 </div>
 </div>
 </div>
+<p>(3 min)</p>
 </section><section id="metadata-and-fair-guidelines"><h2 class="section-heading">Metadata and FAIR guidelines<a class="anchor" aria-label="anchor" href="#metadata-and-fair-guidelines"></a>
 </h2>
 <hr class="half-width">
 <p>Metadata provides extremely valuable information for us and others to
-be able to interpret, process, reuse and reproduce the research data it
+be able to interpret, process, reuse, and reproduce the research data it
 accompanies.</p>
-<p>Because metadata are data about data, all of the FAIR principles i.e.
-Findable, Accessible, Interoperable and Reusable apply to metadata.</p>
-<p>Ideally, metadata should not only be machine-readable, but also
-interoperable so that they can interlink or be reasoned about by
-computer systems.</p>
+<p>Since metadata is data about data, all of the FAIR principles
+(Findable, Accessible, Interoperable, and Reusable) apply to it.</p>
+<p>Ideally, metadata should be not only machine-readable but also
+interoperable so that computer systems can interlink or reason about
+it.</p>
 </section><section id="attribution"><h2 class="section-heading">Attribution<a class="anchor" aria-label="anchor" href="#attribution"></a>
 </h2>
 <hr class="half-width">
@@ -1634,11 +1706,11 @@ guidelines.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-03-data-in-excel"><p>Content from <a href="03-data-in-excel.html">(Meta)data in Excel</a></p>
+</section></section><section id="aio-03-tidy-data-tables"><p>Content from <a href="03-tidy-data-tables.html">Tidy (meta)data tables</a></p>
 <hr>
-<p>Last updated on 2024-02-28 |
+<p>Last updated on 2024-03-22 |
         
-        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/03-data-in-excel.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/03-tidy-data-tables.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1661,22 +1733,21 @@ any links that you are not going to use.
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Do’s and don’ts in Excel</li>
-<li>How good table organization can helps to re-use data</li>
+<li>Understand how good table organization aids data reusability.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>(2 min teaching)</p>
-<p>Tables are one of the best forms of storing and representing
-information. That is why we find them almost everywhere, from a menu in
-a restaurant, a bank statement, to professional databases. No surprise
-then that we biologists love tables and we tend to predominantly use
-Excel.</p>
-<p>Excel is easy to use, flexible and powerful, however, it often gives
-us too much freedom which leads to bad practices and difficult to re-use
-data and metadata.</p>
+<p>(10 min teaching if 1st exc skipped and done as demo)</p>
+<p>Tables are a powerful and ubiquitous tool for storing and presenting
+information. We encounter them everywhere, from restaurant menus and
+bank statements to scientific databases. As biologists, we heavily rely
+on tables, often utilizing spreadsheets like Excel.</p>
+<p>Excel offers ease of use, flexibility, and power. However, this very
+freedom can lead to bad practices that hinder data and metadata
+reusability.</p>
 <div id="exercise-1-what-can-go-wrong-with-data-in-excel-5-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1686,25 +1757,25 @@ data and metadata.</p>
 Excel (5 min)<a class="anchor" aria-label="anchor" href="#exercise-1-what-can-go-wrong-with-data-in-excel-5-min"></a>
 </h3>
 <div class="callout-content">
+<p>We suggest the instuctor to go through problems, instead</p>
 <p>Have a look at the example <a href="./files/04-bad-metadata.xlsx">data-file</a> in Excel.</p>
 <figure><img src="./fig/bad-metadata.png" alt="bad-metadata" class="figure mx-auto d-block"><div class="figcaption">bad-metadata</div>
-</figure><p>This example is similar to the presented data before from experiments
-on plants in different light conditions. Imagine you need to work with
-this file.</p>
+</figure><p>This data resembles plant experiment results under various light
+conditions. Imagine you’re tasked with working on this file.</p>
 <ol style="list-style-type: decimal">
-<li>What do you find confusing?</li>
-<li>What would you try to clarify with the author before doing anything
-with the file?</li>
-<li>What will be the issues with calculation of: average biomas, biomas
-per genotype?</li>
-<li>Typically, more advanced data analysis is done programmatically,
-which requires either conversion to text format as csv, tsv format or
-using a library that reads Excel files and “kind of makes this
-conversion on the fly”. Save this file in a text format, close Excel and
-reopen the saved files. What has changed?</li>
+<li>What aspects of this table appear confusing?</li>
+<li>What clarifications would you seek from the original author before
+using this data?</li>
+<li>How would calculating average biomass or biomass per genotype be
+problematic with this format?</li>
+<li>Advanced data analysis often involves programmatic manipulation.
+This requires converting the data to a text format like CSV or TSV, or
+using libraries that can “read and convert Excel files on the fly.” Save
+this file in a text format, close Excel, and then reopen the saved file.
+What changes occur?</li>
 </ol>
-<p>Have you seen similar tables? Do you believe this example is
-realistic and replicates real-life issues?</p>
+<p>Have you encountered similar tables in your experience? Do you
+believe this example realistically reflects common issues?</p>
 </div>
 </div>
 </div>
@@ -1732,42 +1803,43 @@ missing/inconsistent?</li>
 <li><em>calculations</em></li>
 </ol>
 <ul>
-<li>Before averaging the biomas weight, they need to get converted the
-same unit and the text needs to get replaced by the unit.</li>
-<li>Averaging per genotype needs manual selection of suitable
-entries</li>
+<li>Biomass weights must be in the same unit before averaging. Any text
+entries need to be replaced with the appropriate value.</li>
+<li>Averaging biomass per genotype requires manually selecting relevant
+entries.</li>
 </ul>
 <ol start="4" style="list-style-type: decimal">
 <li><em>saving to txt</em></li>
 </ol>
 <ul>
-<li>Information about light conditions is completely lost.</li>
-<li>Header columns are scrambled.</li>
-<li>The update date may change its meaning depending on the location
-(switch year with day).</li>
+<li>Information about light conditions is entirely lost.</li>
+<li>Header column order might be scrambled.</li>
+<li>The update date format may change meaning depending on location
+(e.g., switching year and day order).</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<section id="common-spreadsheet-errors-25-min-teaching"><h2 class="section-heading">Common Spreadsheet Errors (25 min teaching)<a class="anchor" aria-label="anchor" href="#common-spreadsheet-errors-25-min-teaching"></a>
+<section id="common-spreadsheet-errors"><h2 class="section-heading">Common Spreadsheet Errors<a class="anchor" aria-label="anchor" href="#common-spreadsheet-errors"></a>
 </h2>
 <hr class="half-width">
+<p>(25 min teaching)</p>
 <div class="section level3">
 <h3 id="using-multiple-tables">
 <a name="tables"></a> 1. Using multiple tables<a class="anchor" aria-label="anchor" href="#using-multiple-tables"></a>
 </h3>
-<p>Multiple data tables within one spreadsheet confuse both human and
-computers.</p>
+<p>Multiple data tables within one spreadsheet can confuse both humans
+and computers:</p>
 <ul>
-<li>For humans they prompt finding associations where they are not
+<li>For humans, they can prompt finding associations where they are not
 present.</li>
-<li>For computers each spreadsheet row typically is treated as one
+<li>For computers, each spreadsheet row is typically treated as one
 observation.</li>
 </ul>
-<p>And you are potentially using the same field name in multiple
+<p>Additionally, you may potentially use the same field name in multiple
 places.</p>
-<p>In our example both column A and K named <code>sample</code>
+<p>In our example, both column A and K named <code>sample</code>
 represent different information, and values in row 6 from both parts are
 not related.</p>
 </div>
@@ -1775,42 +1847,41 @@ not related.</p>
 <h3 id="using-multiple-tabs">
 <a name="tabs"></a> 2. Using multiple tabs<a class="anchor" aria-label="anchor" href="#using-multiple-tabs"></a>
 </h3>
-<p>That seems like an easy way to organize data, right? Well, yes and
-no.</p>
+<p>Using multiple tabs might seem like an easy way to organize data, but
+it has its drawbacks:</p>
 <ul>
-<li>tabs make it more difficult to do programmatic analysis</li>
-<li>tabs can be ignored (under the radar) when opening files, for
-example the recently used tab is shown first, other user may not notice
-that there are many other tabs before it (we have seen it a lot when
-importing data)</li>
+<li>Tabs make it more difficult to perform programmatic analysis.</li>
+<li>Tabs can be ignored (under the radar) when opening files. For
+example, the recently used tab is shown first, and other users may not
+notice that there are many other tabs before it (we have seen this
+happen frequently when importing data).</li>
 </ul>
 <p>However,</p>
 <ul>
-<li>tabs seems like a perfect place to add administrative, descriptive
-metadata so they are next to data while not “polluting” the data
+<li>Tabs seem like a perfect place to add administrative, descriptive
+metadata so they are next to data without “polluting” the data
 table.</li>
-<li>having secondary data next to primary in subsequent tabs permits
+<li>Having secondary data next to primary in subsequent tabs permits
 easy inspection of all without a need to always send a collection of
 files.</li>
 </ul>
-<p>Our recommendation: use with caution; the more automatic analysis you
-do, the less frequently you should use tabs.</p>
+<p>Our recommendation: Use tabs with caution; the more automatic
+analysis you do, the less frequently you should use tabs.</p>
 </div>
 <div class="section level3">
 <h3 id="not-filling-in-zeros">
 <a name="zeros"></a> 3. Not filling in zeros<a class="anchor" aria-label="anchor" href="#not-filling-in-zeros"></a>
 </h3>
-<p>It might be that when you’re measuring something, it’s usually a
-zero, say the number of times a rabbit is observed in the survey. Why
-bother writing in the number zero in that column, when it’s mostly
+<p>You might think that when you’re measuring something and it’s usually
+a zero, like the number of times a rabbit is observed in a survey, why
+bother writing in the number zero in that column when it’s mostly
 zeros?</p>
 <p>However, there’s a difference between a zero and a blank cell in a
-spreadsheet. To the computer, a zero is actually data. You measured or
-counted it. A blank cell means that it wasn’t measured and the computer
-will interpret it as an unknown value (otherwise known as a null
-value).</p>
-<p>The spreadsheets or statistical programs will likely mis-interpret
-blank cells that you intend to be zeros.</p>
+spreadsheet. To the computer, a zero is data - you measured or counted
+it. A blank cell means that it wasn’t measured, and the computer will
+interpret it as an unknown value (otherwise known as a null value).</p>
+<p>Spreadsheets or statistical programs will likely misinterpret blank
+cells that you intend to be zeros.</p>
 <p>Because of this, it’s very important to record zeros as zeros and
 truly missing data as nulls.</p>
 </div>
@@ -1818,12 +1889,12 @@ truly missing data as nulls.</p>
 <h3 id="using-problematic-null-values">
 <a name="null"></a> 4. Using problematic null values<a class="anchor" aria-label="anchor" href="#using-problematic-null-values"></a>
 </h3>
-<p>Example: using -999 or -1 or 0 (other numerical values) to represent
-missing data.</p>
-<p>Other times different null values are used to convey different
-reasons why the data isn’t there. For example, -1 not recorded, -2
-contamination etc.</p>
-<p>This is important information to capture, but is in effect using one
+<p>For example: using -999, -1, or 0 (other numerical values) to
+represent missing data.</p>
+<p>Other times, different null values are used to convey different
+reasons why the data isn’t there. For example, -1 for not recorded, -2
+for contamination, etc.</p>
+<p>This is important information to capture, but effectively uses one
 column to capture two pieces (real values and comment or status). It
 would be good here to create a new column like ‘data_missing’ and use
 that column to capture the different reasons.</p>
@@ -1834,7 +1905,7 @@ values.</p>
 <p>It is essential to use a clearly defined and consistent null
 indicator. Blanks (most applications) and NA (for R) are good
 choices.</p>
-<p>White et al, 2013, explain good choices for indicating null values
+<p>White et al. (2013) explain good choices for indicating null values
 for different software applications in their article: <a href="https://peerj.com/preprints/7/" class="external-link">Nine simple ways to make it easier
 to (re)use your data.</a> Ideas in Ecology and Evolution.</p>
 <figure><img src="./fig/null_values_table_1.jpg" alt="White et al." class="figure mx-auto d-block"><div class="figcaption">White et al.</div>
@@ -1845,15 +1916,15 @@ to (re)use your data.</a> Ideas in Ecology and Evolution.</p>
 <a name="formatting"></a> 5. Using formatting to convey information
 organizing data<a class="anchor" aria-label="anchor" href="#using-formatting-to-convey-information-organizing-data"></a>
 </h3>
-<p>Never highlight cells, rows or columns that should be excluded from
+<p>Never highlight cells, rows, or columns that should be excluded from
 an analysis, or to mark particular properties/conditions.</p>
-<p>In our example file information about light conditions is only
+<p>In our example file, information about light conditions is only
 encoded as a color. Formatting information is not available to analysis
 software and almost certainly will be lost during processing.</p>
-<p>All the information should be encoded as a field value, for example
+<p>All the information should be encoded as a field value, for example,
 in columns like:<br>
 condition, calibrated,<br>
-validated, omitted etc.</p>
+validated, omitted, etc.</p>
 <p>You can still use colors/fonts to help with readability (just make
 sure they help and don’t distract) but no information should be lost if
 data is exported to plain text.</p>
@@ -2038,14 +2109,15 @@ is a title, but this is not obvious for a computer program.</p>
 left:</p>
 <pre><code>Author  |  Ann Smart  |  Daniele Hardwork
 Title   |  Starch content in Arabidopis T. under different light conditions</code></pre>
-<div id="exercise-2-spotting-problems-4-min" class="callout challenge">
+<div id="exercise-2-spotting-problems" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-2-spotting-problems-4-min" class="callout-inner">
-<h3 class="callout-title">Exercise 2: Spotting problems (4 min)<a class="anchor" aria-label="anchor" href="#exercise-2-spotting-problems-4-min"></a>
+<div id="exercise-2-spotting-problems" class="callout-inner">
+<h3 class="callout-title">Exercise 2: Spotting problems<a class="anchor" aria-label="anchor" href="#exercise-2-spotting-problems"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min + 4 talking)</p>
 <p>Look at the following rows and columns in the problematic table:</p>
 <ul>
 <li>Row 5</li>
@@ -2094,9 +2166,10 @@ column?</p>
 </div>
 </div>
 </div>
-</section><section id="clean-data-tables-make-life-easier-6-min-teaching"><h2 class="section-heading">Clean data tables make life easier (6 min teaching)<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier-6-min-teaching"></a>
+</section><section id="clean-data-tables-make-life-easier"><h2 class="section-heading">Clean data tables make life easier<a class="anchor" aria-label="anchor" href="#clean-data-tables-make-life-easier"></a>
 </h2>
 <hr class="half-width">
+<p>(2 min teaching)</p>
 <p>Let’s check the cleaned version of the previous <a href="./files/04-better-metadata.xlsx">file</a>.</p>
 <p>Look how easy it is to calculate the average biomas, and if you have
 Office365, see how easy it is to get average values per genotype.</p>
@@ -2105,12 +2178,12 @@ way to start with, in comparison to the ‘bad example’ presented
 before?</p>
 <p>How long do you think it took to “clean” the original, problematic
 data?</p>
-<div id="exercise-3-outsmarted-by-excel-3-min" class="callout discussion">
+<div id="exercise-3-outsmarted-by-excel-4-min" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercise-3-outsmarted-by-excel-3-min" class="callout-inner">
-<h3 class="callout-title">Exercise 3: Outsmarted by Excel (3 min)<a class="anchor" aria-label="anchor" href="#exercise-3-outsmarted-by-excel-3-min"></a>
+<div id="exercise-3-outsmarted-by-excel-4-min" class="callout-inner">
+<h3 class="callout-title">Exercise 3: Outsmarted by Excel (4 min)<a class="anchor" aria-label="anchor" href="#exercise-3-outsmarted-by-excel-4-min"></a>
 </h3>
 <div class="callout-content">
 <p>Excel has built in autoformatting functions which can make
@@ -2153,7 +2226,7 @@ biologist’s life more difficult</p>
 </div>
 </div>
 </div>
-<p>(9 min teaching)</p>
+<p>(7 min teaching)</p>
 <p>A team of Australian researchers analyzed nearly 3,600 genetics
 papers <a href="https://doi.org/10.1186/s13059-016-1044-7" class="external-link">Ziemann
 2016</a>. As is common practice in the field, these papers all came with
@@ -2167,16 +2240,16 @@ including SEPT4 (now SEPTIN4) and MARCH1 (now MARCHF1).</p>
 </section><section id="handling-dates"><h2 class="section-heading">Handling dates<a class="anchor" aria-label="anchor" href="#handling-dates"></a>
 </h2>
 <hr class="half-width">
-<p>Storing and handling dates is generally problematic even in
-programming languages, as we tend to use dates in various formats and
-those formats are region specific.</p>
-<p>Have you ever got confused by a meeting date from an American
+<p>Storing and handling dates can be problematic, even in programming
+languages, as we often encounter dates in various formats that are
+region-specific.</p>
+<p>Have you ever been confused by a meeting date from an American
 collaborator?</p>
-<p>If the dates are “real” data, for example sample collection from a
-patient or field measurement, preventing misinterpretations is crucial.
-There are two safe options:</p>
+<p>When dealing with dates that represent “real” data, such as sample
+collection from a patient or field measurements, preventing
+misinterpretations is crucial. There are two safe options:</p>
 <div class="section level4">
-<h4 id="store-dates-in-3-columns-for-year-month-and-day">Store dates in 3 columns for year, month and day:<a class="anchor" aria-label="anchor" href="#store-dates-in-3-columns-for-year-month-and-day"></a>
+<h4 id="store-dates-in-three-columns-for-year-month-and-day">Store dates in three columns for year, month, and day:<a class="anchor" aria-label="anchor" href="#store-dates-in-three-columns-for-year-month-and-day"></a>
 </h4>
 <table class="table">
 <thead><tr class="header">
@@ -2201,36 +2274,36 @@ There are two safe options:</p>
 <div class="section level4">
 <h4 id="or-store-the-date-as-an-iso-string">Or store the date as an <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO</a> string:<a class="anchor" aria-label="anchor" href="#or-store-the-date-as-an-iso-string"></a>
 </h4>
-<p><code>YYYYMMDD</code> e.g. <code>20210316</code><br><code>YYYY-MM-DD</code> e.g. <code>2021-03-16</code></p>
-<p>Even though, normally <code>YYYY-MM-DD</code> format is preferred, it
-will be sadly reformatted by Excel according to your locale when saving
-to text like .csv!</p>
-<p>When using text files (.csv, .tsv), You should always document what
+<p><code>YYYYMMDD</code> e.g., <code>20210316</code><br><code>YYYY-MM-DD</code> e.g., <code>2021-03-16</code></p>
+<p>Even though the <code>YYYY-MM-DD</code> format is normally preferred,
+it may unfortunately be reformatted by Excel according to your locale
+when saving to text like .csv!</p>
+<p>When using text files (.csv, .tsv), you should always document the
 format you are using to represent dates.</p>
 <div id="to-use-or-not-to-use-excel" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="to-use-or-not-to-use-excel" class="callout-inner">
-<h3 class="callout-title">To use or not to use Excel<a class="anchor" aria-label="anchor" href="#to-use-or-not-to-use-excel"></a>
+<h3 class="callout-title">To Use or Not to Use Excel<a class="anchor" aria-label="anchor" href="#to-use-or-not-to-use-excel"></a>
 </h3>
 <div class="callout-content">
-<p>The Excel file format <code>.xlsx</code> is now open, widely used and
-supported by external libraries and thus it could be considered
-interoperable. Nowadays it is admissible as being FAIR.</p>
-<p>However, plain text files like comma or tab separated values (.csv,
+<p>The Excel file format <code>.xlsx</code> is now open, widely used,
+and supported by external libraries, making it considered interoperable.
+Nowadays, it is admissible as being FAIR.</p>
+<p>However, plain text files like comma or tab-separated values (.csv,
 .tsv) can be accessed without any special software. Data in a CSV file
-can also easily be imported into other formats and environments, such as
+can also be easily imported into other formats and environments, such as
 SQLite and R. We are not tied to a certain version of a certain
 expensive program when we work with CSV files, so it is a good format to
-work with for maximum portability, interoperability and endurance.</p>
+work with for maximum portability, interoperability, and endurance.</p>
 <p>If such files are handled only with text editors or programmatically
-(R, Python) then they are a safer option as they prevent the
+(R, Python), then they are a safer option as they prevent the
 autoformatting issues described before.</p>
-<p>If you analyse your data with R or Python, or you know that your data
-are meant to be processed that way you should be using text formats
+<p>If you analyze your data with R or Python, or you know that your data
+are meant to be processed that way, you should be using text formats
 whenever possible, and as soon as you capture your data.</p>
-<p>However, if you are used to only use Excel and so does your
+<p>However, if you are used to only using Excel and so does your
 community, just keep using it. Just be aware of the possible pitfalls
 discussed, especially when working with gene or protein names and
 accession numbers.</p>
@@ -2245,27 +2318,38 @@ accession numbers.</p>
 <h3 class="callout-title">Cleaning data with Open Refine<a class="anchor" aria-label="anchor" href="#cleaning-data-with-open-refine"></a>
 </h3>
 <div class="callout-content">
-<p>There are tools that help you to clean and reorganize existing
-data.</p>
-<p><a href="https://openrefine.org/" class="external-link">OpenRefine</a> is a powerful tool
-for working with messy data: cleaning it; transforming it from one
-format into another; and extending it with web services and external
-data.</p>
-<p>With OpenRefine you can find and merge synonyms like:
-<code>E. Coli</code>, <code>EColi</code>, <code>Escherichia coli</code>
-into one, or split values in the <code>Name</code> field into
-<code>FirstName</code> and <code>LastName</code>.</p>
-<p>There is a carpentry course available: <a href="https://datacarpentry.org/OpenRefine-ecology-lesson/" class="external-link">Data
-Cleaning with OpenRefine for Ecologists</a></p>
+<p>Data cleaning and reorganization can be time-consuming, but there are
+tools to make it easier.</p>
+<p><a href="https://openrefine.org/" class="external-link">OpenRefine</a> is a powerful option
+for tackling messy data. It can:</p>
+<ul>
+<li>Clean your data: Remove errors and inconsistencies.</li>
+<li>Transform your data: Convert it between different formats.</li>
+<li>Extend your data: Enrich it with web services and external
+sources.</li>
+</ul>
+<p>OpenRefine lets you tackle common data quality issues. For example,
+you can:</p>
+<ul>
+<li>Merge synonyms: Standardize terms like <code>"E. Coli"</code>,
+<code>"EColi"</code>, and <code>"Escherichia coli"</code> into a single
+term.</li>
+<li>Split values: Separate entries in a <code>"Name"</code> field into
+separate <code>"FirstName"</code> and <code>"LastName"</code>
+fields.</li>
+</ul>
+<p><strong>Want to learn more?</strong></p>
+<p>Check out this carpentry course specifically designed for ecologists:
+<strong>Data Cleaning with OpenRefine for Ecologists: <a href="https://datacarpentry.org/OpenRefine-ecology-lesson/" class="external-link">https://datacarpentry.org/OpenRefine-ecology-lesson/</a></strong></p>
 </div>
 </div>
 </div>
-<div id="exercise-4-data-tables-and-fair-3-min" class="callout challenge">
+<div id="exercise-4-data-tables-and-fair-4-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-4-data-tables-and-fair-3-min" class="callout-inner">
-<h3 class="callout-title">Exercise 4: Data tables and FAIR (3 min)<a class="anchor" aria-label="anchor" href="#exercise-4-data-tables-and-fair-3-min"></a>
+<div id="exercise-4-data-tables-and-fair-4-min" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Data tables and FAIR (4 min)<a class="anchor" aria-label="anchor" href="#exercise-4-data-tables-and-fair-4-min"></a>
 </h3>
 <div class="callout-content">
 <p>Which of the following statements is true/false (T or F):</p>
@@ -2319,7 +2403,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-04-files-organization"><p>Content from <a href="04-files-organization.html">Working with files</a></p>
 <hr>
-<p>Last updated on 2024-02-28 |
+<p>Last updated on 2024-03-22 |
         
         <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/04-files-organization.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2409,6 +2493,7 @@ easily identify if something is missing.</p>
 explanation)<a class="anchor" aria-label="anchor" href="#exercise-1-naming-and-sorting-12-min---3-min-explanation"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min breakout + 5 discussing)</p>
 <p>Have a look at the example files from a project, similar to the one
 from the previous metadata episode.</p>
 <p>All the files have been sorted by name and demonstrate consequences
@@ -2482,7 +2567,7 @@ related samples/conditions.</li>
 </div>
 </div>
 </div>
-<p>(4 min teaching)</p>
+<p>(7 min teaching)</p>
 <p>Some things to take into account to decide on your naming convention
 are:</p>
 <ul>
@@ -2534,8 +2619,9 @@ long names) as archiving or moving between OS may fail</li>
 <h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
-<p>## Exercise 2: A good name (3 min) Select which file options adhere
-the best to the presented recommendations:</p>
+<p>## Exercise 2: A good name (3 min)</p>
+<p>Select which file options adhere the best to the presented
+recommendations:</p>
 <ol style="list-style-type: decimal"><li>
 </li></ol>
 <ol style="list-style-type: lower-alpha">
@@ -2585,14 +2671,15 @@ the best to the presented recommendations:</p>
 <p>If adding all the relevant details to file names makes them too long,
 it is often a signal that you should use folders to organize the files
 and capture some of those parameters.</p>
-<div id="exercise-3-folders-vs-files-5-min" class="callout challenge">
+<div id="exercise-3-folders-vs-files" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-3-folders-vs-files-5-min" class="callout-inner">
-<h3 class="callout-title">Exercise 3: Folders vs Files (5 min)<a class="anchor" aria-label="anchor" href="#exercise-3-folders-vs-files-5-min"></a>
+<div id="exercise-3-folders-vs-files" class="callout-inner">
+<h3 class="callout-title">Exercise 3: Folders vs Files<a class="anchor" aria-label="anchor" href="#exercise-3-folders-vs-files"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min)</p>
 <p>Have a look as these two different organization strategies:</p>
 <ol style="list-style-type: decimal">
 <li><p>|– Project<br>
@@ -2656,6 +2743,7 @@ files in one folder.</p>
 </div>
 </div>
 </div>
+<p>(4 min teaching)</p>
 </section><section id="must-do-document-your-strategy"><h2 class="section-heading">Must do: Document your strategy<a class="anchor" aria-label="anchor" href="#must-do-document-your-strategy"></a>
 </h2>
 <hr class="half-width">
@@ -2663,9 +2751,10 @@ files in one folder.</p>
 some of the variables within the folder structure, document it!<br>
 Always include a PROJECT_STRUCTURE (or README) file describing your file
 naming and folder organisation conventions.</p>
-</section><section id="strategies-to-set-up-a-clear-folder-structure-3-min-teaching"><h2 class="section-heading">Strategies to set up a clear folder structure (3 min teaching)<a class="anchor" aria-label="anchor" href="#strategies-to-set-up-a-clear-folder-structure-3-min-teaching"></a>
+</section><section id="strategies-to-set-up-a-clear-folder-structure"><h2 class="section-heading">Strategies to set up a clear folder structure<a class="anchor" aria-label="anchor" href="#strategies-to-set-up-a-clear-folder-structure"></a>
 </h2>
 <hr class="half-width">
+<p>(3 min teaching)</p>
 <p>Establishing a system that allows you to access your files, avoid
 duplication and ensure that your data can be easily found needs
 planning.</p>
@@ -2681,15 +2770,15 @@ folders and increase in specificity as you go down the hierarchy.</li>
 <li>Be consistent: agree on a naming convention from the outset of your
 research project.</li>
 </ul>
-<div id="exercise-4-typical-folder-organizations-7-min" class="callout challenge">
+<div id="exercise-4-typical-folder-organizations" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-4-typical-folder-organizations-7-min" class="callout-inner">
-<h3 class="callout-title">Exercise 4: Typical folder organizations (7
-min)<a class="anchor" aria-label="anchor" href="#exercise-4-typical-folder-organizations-7-min"></a>
+<div id="exercise-4-typical-folder-organizations" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Typical folder organizations<a class="anchor" aria-label="anchor" href="#exercise-4-typical-folder-organizations"></a>
 </h3>
 <div class="callout-content">
+<p>(5 min breakout + 7 explanation)</p>
 <p>Have a look at the four different folder structures.
 <img src="./fig/07-file_organisation.png" alt="file-organisation-strategies" width="600" class="figure"><em>Figure credits: Ines Boehm</em></p>
 <p>The first two: a) b) are recommended for computing, the other two: c)
@@ -2744,14 +2833,12 @@ samples at the same conditions.</p>
 </div>
 </div>
 </div>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>(Optional) Good enough practices for scientific computing recommendations</h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
-<div class="accordion-body">
+<p>(4 min teaching) ::::::::::::::::::::::::::::::::::::::::::::::::
+spoiler</p>
+</section><section id="optional-good-enough-practices-for-scientific-computing-recommendations"><h2 class="section-heading">(Optional) Good enough practices for scientific computing
+recommendations<a class="anchor" aria-label="anchor" href="#optional-good-enough-practices-for-scientific-computing-recommendations"></a>
+</h2>
+<hr class="half-width">
 <p>The <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510#sec009" class="external-link">Good
 enough practices in scientific computing</a> paper makes the following
 simple recommendations:</p>
@@ -2772,11 +2859,8 @@ directory</li>
 location in a final manuscript (e.g., fig_3_a.png), since those numbers
 will almost certainly change as the project evolves.</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-</section><section id="after-you-have-a-plan-5-min-teaching"><h2 class="section-heading">After you have a plan (5 min teaching)<a class="anchor" aria-label="anchor" href="#after-you-have-a-plan-5-min-teaching"></a>
+<p>:::::::::::::::::::::::::::::::::::::::::::::::</p>
+</section><section id="after-you-have-a-plan"><h2 class="section-heading">After you have a plan<a class="anchor" aria-label="anchor" href="#after-you-have-a-plan"></a>
 </h2>
 <hr class="half-width">
 <p>Your naming conventions might need some adjustments as the project
@@ -2881,11 +2965,11 @@ including naming convention</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-xTemplate"><p>Content from <a href="xTemplate.html">Using Markdown</a></p>
+</section></section><section id="aio-05-reusable-analysis"><p>Content from <a href="05-reusable-analysis.html">Reusable analysis</a></p>
 <hr>
-<p>Last updated on 2024-02-24 |
+<p>Last updated on 2024-03-22 |
         
-        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/xTemplate.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/05-reusable-analysis.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2897,8 +2981,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>How keep track of your data analysis procedure?</li>
+<li>How to make reproducible plots?</li>
+<li>What are Jupyter notebooks</li>
 </ul>
 </div>
 </div>
@@ -2908,81 +2993,747 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Recognise benefits of notebooks for analysis</li>
+<li>Use a jupyter notebook and modify it</li>
+<li>Understand notebooks role in being FAIR</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<hr>
+<section id="reusable-analysis"><h2 class="section-heading">Reusable Analysis<a class="anchor" aria-label="anchor" href="#reusable-analysis"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+<p>(~50 min teaching)</p>
+<p><strong>Data analysis and research are inherently iterative.</strong>
+Experimental measurements and their subsequent analysis guide the
+research journey. For example, in drug discovery, analyzing initial data
+might reveal the need to switch targets if a current one proves
+unsuitable. Similarly, with large datasets or omics experiments, initial
+exploration often necessitates adjustments to analysis methods and,
+potentially, the experimental procedures themselves.</p>
+<p>This “<strong>ad-hoc</strong>” analysis, characterized by repeated
+exploration, refinement, and adaptation, is crucial for identifying
+suitable methods and parameters. Only after multiple iterations does the
+process culminate in statistically validated results, ready for
+presentation in publications with accompanying graphs. Traditional
+methods like pen and paper or spreadsheets struggle to effectively track
+this iterative nature of research.</p>
+</section><section id="reusable-computing"><h2 class="section-heading">Reusable Computing<a class="anchor" aria-label="anchor" href="#reusable-computing"></a>
+</h2>
+<hr class="half-width">
+<p>We have previously discussed electronic lab notebooks and their
+benefit in being FAIR. If you are working with large datasets,
+mathematical models, complex visualisations of your data then you might
+already be frustrated by having to copy and paste your figures into your
+electronic lab notebook after each iteration of new code (or generation
+in Excel). You might also have lost track of which code corresponded to
+which figure and why you changed your code last time.</p>
+<p>There is a simple solution to this: <strong>Computational
+notebooks</strong></p>
+</section><section id="computational-notebooks---jupyter-notebook-for-fair-practices"><h2 class="section-heading">Computational Notebooks - Jupyter Notebook for FAIR practices<a class="anchor" aria-label="anchor" href="#computational-notebooks---jupyter-notebook-for-fair-practices"></a>
+</h2>
+<hr class="half-width">
+<p>Just like traditional lab notebooks document experiments, <strong><a href="www.jupyter.org">Jupyter Notebooks</a></strong> serve as digital
+workspaces for scientific computing. Instead of physical data like DNA
+gels, researchers can embed code, data visualizations (graphs), and
+explanations directly within the notebook. This free and popular tool
+offers several advantages:</p>
+<ul>
+<li>Interactive coding: Jupyter Notebooks allow writing and editing code
+in various languages like Python, R, or Julia (hence the name “Ju” +
+“Py” + “ter”). The results (calculations or graphs) appear instantly
+alongside the code.</li>
+<li>Integrated Documentation: Code snippets seamlessly blend with
+explanations, capturing the entire experimental workflow – from setup
+and analysis to results and visualizations.</li>
+</ul>
+<p><strong>Interactive data exploration</strong>: Data scientists
+leverage this format to explore data through an iterative process. They
+can write code, view the output, modify it, and repeat, fostering an
+interactive loop between researcher and data.<br>
+The huge benefit of such notebooks is that source code is mixed with
+documentation, thus explaining experimental setup, analysis, results of
+tables and plots throughout.</p>
+<p>As a basic principle Jupyter Notebooks run on a ‘kernel’ which is
+responsible in execution of the code. Generally this ‘kernel’ can run on
+your computer or you can use external servers to store and analyse your
+data.</p>
+<p><strong>Sharing and Collaboration</strong>: Notebooks can be exported
+as PDF or HTML files for easy sharing. Additionally, services like <a href="https://nbviewer.org/" class="external-link">nbviewer</a> allow rendering notebooks
+directly on GitHub, eliminating the need for software installation.</p>
+<p>To show you how easy it is to work with Jupyter Notebooks, we have
+created an exercise an exercise where you’ll explore real-world data
+from a plant experiment.</p>
+<p>We’ll analyze the phenotypes of Arabidopsis plants under short and
+long-day light conditions using R programming as an example. We will
+create some graphs and test whether there are differences between our
+genotypes of arabidopsis.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">The</span> example notebook and data files can be found in instructors folders.  </span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">The</span> most recent version are available via a separated github project:  </span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">[fair-jupyter]</span><span class="er">(</span><span class="ex">https://github.com/BioRDM/fair-jupyter</span><span class="kw">)</span></span></code></pre>
+</div>
+<div id="exercise-1-basics-of-jupyter-notebooks-5-min" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
+<div id="exercise-1-basics-of-jupyter-notebooks-5-min" class="callout-inner">
+<h3 class="callout-title">Exercise 1: basics of Jupyter notebooks (5
+min)<a class="anchor" aria-label="anchor" href="#exercise-1-basics-of-jupyter-notebooks-5-min"></a>
 </h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>Navigate to the jupyter server, we will first show you how to
+duplicate a notebook and save it and how to run the code:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the notebook titled
+‘student_notebook_light_conditions.ipynb’ as depicted below and click
+‘Duplicate’. Confirm with Duplicate when you are asked if you are
+certain that you want to duplicate the notebook. <img src="./fig/10-01-duplicate_notebook.png" alt="Figure 1. Duplicate a Jupyter notebook" class="figure"><em>Figure 1. Duplicate
+a Jupyter notebook</em></p></li>
+<li><p>A copy of the notebook has appeared with the suffix ‘-Copy’ and a
+number (<strong>Figure 2a</strong>), select this notebook. Have a look
+around the notebook and explore its anatomy (<strong>Figure 2</strong>),
+you should see experimental details, an image, and code. If you click on
+separate parts of the notebook you can see that it is divided into
+individual cells (<strong>Figure 2 e-g</strong>) which are of varying
+type (Code, R in this case, or Markdown - <strong>Figure 2d</strong>).
+Hashtags are comments within the code and shall help you to interpret
+what individual bits of code do.</p></li>
+</ol>
+<p><img src="./fig/10-02-jupyter_anatomy.png" alt="Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the notebook, (b, c) are toolbars, (c) contains the most commonly used tools, (d) shows of what type - Markdown, Code etc… - the currently selected cell is, and (e-g) are examples of cells, where (e) shows the currently selected cell." class="figure"><br><em>Figure 2. Anatomy of a Jupyter notebook: (a) depicts the name of the
+notebook, (b, c) are toolbars, (c) contains the most commonly used
+tools, (d) shows of what type - Markdown, Code etc… - the currently
+selected cell is, and (e-g) are examples of cells, where (e) shows the
+currently selected cell.</em></p>
+<ol style="list-style-type: decimal">
+<li>Change the title of the notebook (<strong>a</strong>) to your
+initials e.g. “student_notebook_light_conditions_IB”</li>
+<li>To Save the notebook click on the disk symbol in the toolbar
+(<strong>c</strong>).</li>
+<li>To run the code select the top cell of the notebook
+(<strong>e</strong>) - this is likely pre-selected already - and click
+“Run” in the tool bar (<strong>c</strong>). The selected cell jumps one
+cell down (<strong>f</strong>).</li>
+<li>To avoid having to press Run repeatedly until we are at the end of
+the code (try clicking Run two more times and see what happens), we will
+show you how to run all the code. In the top tool bar
+(<strong>b</strong>) click “Cell” and select “Run All”. (“Cell &gt; Run
+All”.)</li>
+<li>If you have another look at the notebook you can see that a table,
+graph and outputs of statistical testing have been generated.</li>
+</ol>
 </div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">Output</h4>
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<p>If you followed all steps correctly you should have reproduced the
+table, a graph and statistical testing. Apart from the pre-filled
+markdown text the rendered values of the code should look like this:
+<img src="./fig/10-03-jupyter_dataframe.png" alt="Figure 3. Rendering of data frame" class="figure"><br><em>Figure 3. Rendering of data frame</em> <img src="./fig/10-04-jupyter_plot.png" alt="Figure 4. Rendering of plot" class="figure"><br><em>Figure 4. Rendering of plot</em></p>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-2-how-to-add-and-remove-content-3-min" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-2-how-to-add-and-remove-content-3-min" class="callout-inner">
+<h3 class="callout-title">Exercise 2: how to add and remove content (3
+min)<a class="anchor" aria-label="anchor" href="#exercise-2-how-to-add-and-remove-content-3-min"></a>
 </h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<div class="callout-content">
+<p>In your previously saved notebook, we will now show you how to add
+text and remove cells within your notebook. Additionally we will show
+you how to change code:</p>
+<ol style="list-style-type: decimal">
+<li>We want to change the author name to your name: Double click on the
+cell containing the author name. You can see how the layout of the cell
+changes into Markdown, and you can simply change the name.</li>
+<li>Press the Run button in the toolbar and the Markdown of the cell
+will be rendered again and you can see the text shows as
+previously.</li>
+<li>We now want to add some details about the “light_results.txt” file
+which is being loaded. To add a cell above the code, click the cell
+currently above the first lines of code and click the “+” in the
+toolbar. This creates a cell below selected cell.</li>
+<li>Now add a note about the file which is being loaded and the purpose
+of the subsequent analysis: e.g. Loading of results following short- and
+long-day light exposure on arabidopsis, followed by visualisation of
+differences in chlorophyll/biomas etc… content between genotypes on
+short-days and long-days. To show the cell as Markdown and not code,
+make sure “Markdown” is selected in the toolbar.</li>
+<li>To remove a cell, select it and click on the scissors icon in the
+toolbar (This can be undone under Edit &gt; Undo Delete Cells).</li>
+<li>To change the output of your graph click on the cell containing the
+code below the “Visualise data” title. We want you to change the colours
+of the box-plots. You can do this where the comment “# change colour of
+groups” is written. Either you can use three different HEX codes (a
+6-symbol code representing colours from white to black), or colours
+simply by their name - e.g. dark blue, orange…</li>
+<li>To save the graph under a different name add your initials to the
+file name under which the image is being saved. Press Run again. Your
+image should be visible in the overall file hierarchy.</li>
+</ol>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<p>(3 min teaching)</p>
+</section><section id="jupyter-notebooks-are-easy-to-use-and-great-for-collaborative-efforts"><h2 class="section-heading">Jupyter Notebooks are easy to use and great for collaborative
+efforts<a class="anchor" aria-label="anchor" href="#jupyter-notebooks-are-easy-to-use-and-great-for-collaborative-efforts"></a>
+</h2>
+<hr class="half-width">
+<p>Imagine your collaborators have shared this experiment measuring
+biomas of <em>Arabidopsis</em> with you and you were able to duplicate
+and follow their entire analysis from start to finish, including
+interpretation of data. Now you are interested in analysing what biomas
+look like on long-days. You are in luck!</p>
+<p>Because Jupyter Notebooks are so easy to handle you simply need to
+copy and paste the already existing code your collaborators shared and
+adapt variables such as short-day to long-day and change the names under
+which figures are being saved to avoid duplication.</p>
+<div id="exercise-3-add-another-analysis-step-10-min-including-walkthrough" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
+<div id="exercise-3-add-another-analysis-step-10-min-including-walkthrough" class="callout-inner">
+<h3 class="callout-title">Exercise 3: add another analysis step (10 min
+including walkthrough)<a class="anchor" aria-label="anchor" href="#exercise-3-add-another-analysis-step-10-min-including-walkthrough"></a>
 </h3>
 <div class="callout-content">
-
+<p>We have shown you how to manipulate text and code in Jupyter
+notebooks, now we want you to add data visualisation (a graph) and stats
+for long- day light condition: 1. Add additional cells including</p>
+<ul>
+<li>titles</li>
+<li>edited code to depict graph from long-days and not short-days</li>
+<li>Figure legend</li>
+<li>statistical testing of difference between genotypes on
+long-days</li>
+<li>interpretation of results of statistical testing.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>## Solution The following code will result in your new graph:</p>
+<pre><code><span>    <span class="fu">ggplot</span><span class="op">(</span><span class="fu">subset</span><span class="op">(</span><span class="va">df</span>, <span class="va">light_condition</span> <span class="op">%in%</span> <span class="st">"LD"</span><span class="op">)</span>, </span>
+<span>    <span class="co"># subset only SD from &gt;&gt;light condition column for plotting</span></span>
+<span>          mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">genotype</span>, y <span class="op">=</span> <span class="va">biomas</span>, fill <span class="op">=</span> <span class="va">genotype</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>    <span class="co"># x-axis shows genotype, y-axis shows biomas</span></span>
+<span>       <span class="fu">geom_boxplot</span><span class="op">(</span>alpha<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span> <span class="op">+</span></span>
+<span>       <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Biomas per Genotype on long days"</span>,</span>
+<span>           x <span class="op">=</span> <span class="st">"Genotype"</span>, <span class="co"># Title of x-axis</span></span>
+<span>           y <span class="op">=</span> <span class="st">"Biomas (g)"</span><span class="op">)</span> <span class="op">+</span> <span class="co"># Title of y-axis</span></span>
+<span>       <span class="co"># change colour of groups</span></span>
+<span>       <span class="fu">scale_fill_manual</span><span class="op">(</span>values<span class="op">=</span><span class="fu">c</span><span class="op">(</span><span class="st">"#999999"</span>, <span class="st">"#E69F00"</span>, <span class="st">"#56B4E9"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>       <span class="fu">theme_bw</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>       <span class="fu">theme</span><span class="op">(</span>legend.position<span class="op">=</span><span class="st">"none"</span><span class="op">)</span></span></code></pre>
+<p>The following code will result in testing of biomas between genotypes
+in long-days - we assign a new variable to separate both analysis.</p>
+<pre><code><span>   <span class="va">res.aov.LD</span> <span class="op">&lt;-</span> <span class="fu">aov</span><span class="op">(</span><span class="va">biomas</span> <span class="op">~</span> <span class="va">genotype</span>, data <span class="op">=</span> <span class="fu">subset</span><span class="op">(</span><span class="va">df</span>, <span class="va">light_condition</span> <span class="op">%in%</span> <span class="st">"LD"</span><span class="op">)</span><span class="op">)</span></span>
+<span>   <span class="co"># Summary of the analysis</span></span>
+<span>   <span class="fu">summary</span><span class="op">(</span><span class="va">res.aov.LD</span><span class="op">)</span></span></code></pre>
+<p>The following code will result in Tukey multiple pairwise-comparison
+testing.</p>
+<pre><code><span>     <span class="co"># conduct Tukey multiple pairwise-comparison</span></span>
+<span>     <span class="fu">TukeyHSD</span><span class="op">(</span><span class="va">res.aov.LD</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="easy-sharing-of-your-notebook"><h2 class="section-heading">Easy sharing of your notebook<a class="anchor" aria-label="anchor" href="#easy-sharing-of-your-notebook"></a>
+</h2>
+<hr class="half-width">
+<p>We have now managed to not only reproduce code, but we were able to
+add to the analysis and interpretation of overall results. To show your
+PI and colleagues your results, you want to save the notebook in
+readable format.</p>
+<div id="exercise-4-sharing-of-your-jupyter-notebook-5-min" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-4-sharing-of-your-jupyter-notebook-5-min" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Sharing of your Jupyter Notebook
+(5 min)<a class="anchor" aria-label="anchor" href="#exercise-4-sharing-of-your-jupyter-notebook-5-min"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Download your Notebook (ensure all code has been run) as .html</li>
+<li>View the documents and think about why it is important to run all
+code before download (try Cell &gt; All Output &gt; Clear and download
+your Notebook then and compare)</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>It is important all code is run before the notebook is downloaded, as
+during download only the text and graphs are saved that are currently
+visible in your notebook.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The example notebook is extremely well documented to show the good
+practices when coding. Without such level of comments and explanations
+it may not be possible for new-commers to re-use this notebook.</p>
+</section><section id="plotting-in-r-or-python"><h2 class="section-heading">Plotting in R or Python<a class="anchor" aria-label="anchor" href="#plotting-in-r-or-python"></a>
+</h2>
+<hr class="half-width">
+<p>Both R and Python offer powerful tools for creating scientific plots,
+making them a natural starting point for many programmers. Compared to
+Excel, these languages enable the generation of:</p>
+<ul>
+<li>Professional visualizations: R and Python provide extensive
+libraries for creating publication-quality plots with a wider range of
+customization options.</li>
+<li>Reproducibility: Code-driven plots ensure consistent results and are
+easier to share and adapt for specific publication requirements.</li>
+<li>Scalability: Scripting allows for the efficient creation of multiple
+figures with consistent formatting, saving researchers time and
+effort.</li>
+</ul>
+<p>Key benefits of using code for scientific plots:</p>
+<ul>
+<li>Customization: Precise control over every plot element (colors,
+fonts, axes, etc.) ensures adherence to specific journal formatting
+guidelines.</li>
+<li>Efficiency: Code facilitates the creation of complex plots or
+repetitive tasks, streamlining the workflow.</li>
+</ul></section><section id="capturing-the-ad-hoc-analysis-journey"><h2 class="section-heading">Capturing the Ad-hoc Analysis Journey<a class="anchor" aria-label="anchor" href="#capturing-the-ad-hoc-analysis-journey"></a>
+</h2>
+<hr class="half-width">
+<p>Jupyter Notebooks excel at documenting the entire <strong>exploratory
+data analysis (EDA)</strong> process. They capture the rationale and
+decision-making behind your analysis, serving as a narrative alongside
+the code.</p>
+<p><strong>Key benefits of Jupyter Notebooks for EDA:</strong></p>
+<ul>
+<li>
+<strong>Comprehensive Documentation:</strong> Markdown cells allow
+you to record:
+<ul>
+<li>Motivations and thought processes leading to the final results.</li>
+<li>Details about input data usage.</li>
+<li>Specific parameters and functions employed.</li>
+<li>Intermediate results and adjustments made throughout the
+analysis.</li>
+</ul>
+</li>
+<li>
+<strong>Transparency and Reproducibility:</strong> By capturing all
+analytical steps, notebooks promote clear communication and ensure the
+analysis can be easily replicated.</li>
+</ul>
+<p><strong>Maintaining Clean and Reusable Notebooks:</strong></p>
+<p>While notebooks offer immense advantages, their effectiveness relies
+on <strong>adherence to best practices</strong>:</p>
+<ul>
+<li>
+<strong>Meticulous Documentation:</strong> Thoroughly document the
+decision-making process and the reasoning behind each step.</li>
+<li>
+<strong>Data Transparency:</strong> Clearly record details about the
+input data, including its source and any cleaning procedures
+applied.</li>
+<li>
+<strong>Parameter Clarity:</strong> Document the chosen parameters
+and their significance in the analysis.</li>
+<li>
+<strong>Data Management:</strong> Strategically decide which data to
+retain and why, with clear annotations.</li>
+<li>
+<strong>Code Clarity:</strong> Employ clear and consistent coding
+practices, including meaningful variable and function names, and proper
+code formatting.</li>
+<li>
+<strong>Self-Contained Notebooks:</strong> Ensure your notebook is
+shipped with all necessary file inputs and a comprehensive description
+of the runtime environment.</li>
+</ul>
+<p><strong>Strengths of Jupyter Notebooks:</strong></p>
+<ul>
+<li>
+<strong>Orchestrating Analyses:</strong> Notebooks efficiently
+manage step-by-step operations in R, Python, or even shell scripting
+(supporting all three languages simultaneously).</li>
+<li>
+<strong>Parameter Management:</strong> They effectively capture and
+manage analysis parameters.</li>
+<li>
+<strong>Interpretation and Insights:</strong> Notebooks facilitate
+the inclusion of interpretations and insights alongside the code,
+enriching the overall analysis.</li>
+<li>
+<strong>Interactive Interface:</strong> They can function as a
+dynamic user interface, allowing users to modify parameters directly
+within the notebook based on the provided instructions.</li>
+</ul>
+<p><strong>Limitations to Consider:</strong></p>
+<ul>
+<li>
+<strong>Not a Replacement for IDEs:</strong> Jupyter Notebooks are
+not intended to fully replace Integrated Development Environments
+(IDEs). Complex, modularized code should be written in separate
+packages.</li>
+<li>
+<strong>Unsuitable for Long Programs:</strong> While notebooks can
+handle smaller scripts, lengthy executable code is better suited for
+compilation into standalone modules.</li>
+</ul>
+<div id="exercise-5-accessibility-of-jupyter-notebooks-5-min" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-5-accessibility-of-jupyter-notebooks-5-min" class="callout-inner">
+<h3 class="callout-title">Exercise 5: Accessibility of Jupyter Notebooks
+(5 min)<a class="anchor" aria-label="anchor" href="#exercise-5-accessibility-of-jupyter-notebooks-5-min"></a>
+</h3>
+<div class="callout-content">
+<p>On a scale from -2 to 2, how do you feel about the following
+statements (R is interchangeable with Python), where -2 (strongly
+disagree), 0 no pinion to +2 strongly agree:</p>
+<ul>
+<li>making graphs for a subset of data is easier in R than in Excel</li>
+<li>it is easier to filter for data in R than in Excel</li>
+<li>it is easier to apply formulas or calculations in R than in
+Excel</li>
+<li>it is easier to generate a series of plots with similar layout in R
+than Excel</li>
+<li>it is easier to do large scale data processing in R than in
+Excel</li>
+<li>using notebooks does not require any programming knowledge</li>
+<li>notebooks give you a better overview of your data processing than
+Excel</li>
+<li>Jupyter is free, whilst a Microsoft Office (+Excel) suite costs
+$149.99, this alone is an incentive to use Jupyter notebooks as not all
+individuals have Microsoft Office supported by their employers</li>
+<li>you need to learn R to do any data processing in notebook</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="computing-in-r-and-python"><h2 class="section-heading">Computing in R and Python<a class="anchor" aria-label="anchor" href="#computing-in-r-and-python"></a>
+</h2>
+<hr class="half-width">
+<p>Here’s a revised version of the text about using R and Python for
+scientific computing:</p>
+<p><strong>Starting Strong in R and Python</strong></p>
+<p>While both R and Python are lauded for their flexibility and ease of
+use, this very characteristic can lead to the development of poor coding
+habits. Their accessible nature can tempt users to prioritize quick
+results over well-structured, maintainable code.</p>
+<p>To ensure a smooth journey into scientific computing, we recommend a
+phased approach:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Grasp the Fundamentals:</strong> Begin by mastering the
+creation of basic plots, data cleaning techniques, and data table
+manipulation.</li>
+<li>
+<strong>Solidify Software Engineering Principles:</strong> Next,
+delve into the core concepts of software engineering and establish best
+practices for writing clean and maintainable code.</li>
+<li>
+<strong>Progress to Advanced Analysis:</strong> Once a solid
+foundation is built, gradually progress to tackling more complex
+analytical tasks, constructing data processing pipelines, and crafting
+comprehensive workflows.</li>
+</ol>
+<p><strong>Addressing Environment Inconsistencies:</strong></p>
+<p>A significant challenge with R and Python is their dependence on the
+specific libraries installed on a user’s machine. Inconsistent library
+versions or even the presence of system-specific libraries can lead to
+code that functions perfectly on one machine but fails on another.</p>
+<p><strong>Mitigating Versioning Issues:</strong></p>
+<p>Fortunately, solutions exist to address these environment
+inconsistencies. Here are two notable examples:</p>
+<ul>
+<li>
+<strong>Conda (Python):</strong> This package management system
+simplifies installation, updates, and dependency management for Python
+packages. It also facilitates the creation of isolated project
+environments, ensuring each project utilizes the correct set of
+libraries and their specific versions. While Conda supports various
+languages, it is particularly well-suited for Python environments.</li>
+<li>
+<strong>renv (R):</strong> In the realm of R, the <code>renv</code>
+package offers a robust alternative for managing project
+dependencies.</li>
+</ul>
+<p><strong>Maintaining Transparency:</strong></p>
+<p>Regardless of the chosen package management system, it’s crucial to
+meticulously track the libraries used during code development, including
+their specific versions. This practice fosters transparency,
+reproducibility, and simplifies collaboration by ensuring everyone
+involved has access to the exact software dependencies required to run
+the code successfully.</p>
+<p>This revised version emphasizes the importance of adopting good
+coding practices from the outset. It outlines a recommended learning
+path and highlights the challenges associated with environment
+inconsistencies. Additionally, it introduces solutions for managing
+package dependencies effectively.</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">## Attribution</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a> <span class="ex">Content</span> of this episode was adopted after</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a> <span class="ex">*</span> [Why Jupyter is a data scientists<span class="st">' computational notebook of choice](https://doi.org/10.1038/d41586-018-07196-1)</span></span></code></pre>
+</div>
+<div id="further-reading" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="further-reading" class="callout-inner">
+<h3 class="callout-title">Further Reading<a class="anchor" aria-label="anchor" href="#further-reading"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li><a href="https://reproducible-analysis-workshop.readthedocs.io/en/latest/4.Jupyter-Notebook.html" class="external-link">Reproducible
+analysis and Research Transparency</a></li>
+<li><a href="https://www.browserstack.com/guide/coding-standards-best-practices" class="external-link">Coding
+Standards best practices</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Jupyter Notebooks are useful tools to share analysis with
+non-programmers</li>
+<li>One single document can visualise background, results, formulae/code
+and metadata</li>
+<li>One single document helps to make your work more understandable,
+repeatable and shareable</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-06-data-repositories"><p>Content from <a href="06-data-repositories.html">Public repositories</a></p>
+<hr>
+<p>Last updated on 2024-03-22 |
+        
+        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/06-data-repositories.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Where can I deposit datasets?</li>
+<li>What are general data repositories?</li>
+<li>How to find a repository?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>See the benefits of using research data repositories.</li>
+<li>Differentiate between general and specific repositories.</li>
+<li>Find a suitable repository.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="what-are-research-data-repositories-4-min-teaching"><h2 class="section-heading">What are research data repositories? (4 min teaching)<a class="anchor" aria-label="anchor" href="#what-are-research-data-repositories-4-min-teaching"></a>
+</h2>
+<hr class="half-width">
+<p>Research data repositories are online repositories that enable the
+preservation, curation and publication of research ‘products’. These
+repositories are mainly used to deposit research ‘data’. However, the
+scope of the repositories is broader as we can also deposit/publish
+‘code’ or ‘protocols’ (as we saw with protocols.io).</p>
+<p>There are general “data agnostic” repositories, for example:</p>
+<ul>
+<li>
+<a href="http://datadryad.org" class="external-link">Dryad</a>,</li>
+<li>
+<a href="http://zenodo.org" class="external-link">Zenodo</a>,</li>
+<li>
+<a href="http://figshare.com" class="external-link">FigShare</a>,</li>
+<li>
+<a href="http://thedata.org" class="external-link">Dataverse</a>.</li>
+</ul>
+<p>Or domain specific, for example:</p>
+<ul>
+<li>
+<a href="https://www.uniprot.org/" class="external-link">UniProt</a> protein data,</li>
+<li>
+<a href="https://www.ncbi.nlm.nih.gov/genbank/" class="external-link">GenBank</a> sequence
+data,</li>
+<li>
+<a href="https://www.ebi.ac.uk/metabolights/" class="external-link">MetaboLights</a>
+metabolomics data</li>
+<li>
+<a href="https://github.com/" class="external-link">GitHub</a> for code.</li>
+</ul>
+<p>Research outputs should be submitted to discipline/domain-specific
+repositories whenever it is possible. When such a resource does not
+exist, data should be submitted to a ‘general’ repository. Research data
+repositories are a key resource to help in data FAIRification as they
+assure Findability and Accessibility.</p>
+<div id="exercise-1-public-general-record-5-min" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-1-public-general-record-5-min" class="callout-inner">
+<h3 class="callout-title">Exercise 1: Public general record (5 min)<a class="anchor" aria-label="anchor" href="#exercise-1-public-general-record-5-min"></a>
+</h3>
+<div class="callout-content">
+<p>Have a look at the following record for data set in Zenodo
+repository: <a href="https://doi.org/10.5281/zenodo.5045374" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg" alt="DOI" class="figure"></a></p>
+<p>We have discussed which elements of a Zenodo record makes it
+FAIR.</p>
+<p>Now, skim through the data set description (HINT there is also a
+README), try to judge the following, and indicate your evaluation using
+marks from 0 to 5 (5 best) as to whether:</p>
+<ul>
+<li>It is clear what the content of the data set is:</li>
+<li>It is clear why the data could be used (i.e., what for):</li>
+<li>It is well described:</li>
+<li>How confident will you be to work with this data set:</li>
+<li>How easy it is to access the data set content:</li>
+<li>Your team datasets are equally well described (or better):</li>
+</ul>
+</div>
+</div>
+</div>
+<p>(4 min discussion)</p>
+<div id="exercise-2-datasets-discovery-5-min" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-2-datasets-discovery-5-min" class="callout-inner">
+<h3 class="callout-title">Exercise 2: Datasets discovery (5 min)<a class="anchor" aria-label="anchor" href="#exercise-2-datasets-discovery-5-min"></a>
+</h3>
+<div class="callout-content">
+<p>Try to find: - data sets related to neuromuscular junction in Zenodo
+Judge the following, indicating your assessment using marks from 0 to 5
+(5 best)</p>
+<ul>
+<li>how easy it is to find similar or interesting data sets:</li>
+<li>It is clear what the content of the other data sets are:</li>
+<li>It is clear why the data could be used (ie what for):</li>
+<li>They are well described:</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Zenodo is a good place to keep your data separate from paper. It
+gives access to all files, allowing you to cite the data as well (or
+instead of) the paper.</p>
+<p>However, it is not to good for discovery and does not enforce most
+metadata!</p>
+</div>
+</div>
+</div>
+</div>
+<p>(3 min teaching)</p>
+<div id="minimal-data-set" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="minimal-data-set" class="callout-inner">
+<h3 class="callout-title">Minimal data set<a class="anchor" aria-label="anchor" href="#minimal-data-set"></a>
+</h3>
+<div class="callout-content">
+<p>Minimal data set to consist of the data required to replicate all
+study findings reported in the article, as well as related metadata and
+methods.</p>
+<ul>
+<li>The values behind the means, standard deviations and other measures
+reported;</li>
+<li>The values used to build graphs;</li>
+<li>The points extracted from images for analysis.</li>
+</ul>
+<p>(no need for raw data if the standard in the field is to share data
+that have been processed)</p>
+<p><a href="https://journals.plos.org/plosbiology/s/data-availability" class="external-link">PLOS</a></p>
+</div>
+</div>
+</div>
+<div id="exercise-3.-domain-specific-repositories" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-3.-domain-specific-repositories" class="callout-inner">
+<h3 class="callout-title">Exercise 3. Domain specific repositories<a class="anchor" aria-label="anchor" href="#exercise-3.-domain-specific-repositories"></a>
+</h3>
+<div class="callout-content">
+<p>(5 min + 5).</p>
+<p>Select one of the following repositories based on your
+expertise/interests:</p>
+<ul>
+<li>Have a look at mRNAseq accession ‘E-MTAB-7933’ in <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-7933/" class="external-link">ArrayExpress</a><br>
+</li>
+<li>Have a look at microscopy ‘project-1101’ in <a href="https://idr.openmicroscopy.org/webclient/?show=project-1101" class="external-link">IDR</a><br>
+</li>
+<li>Have a look at the synthethic part record
+‘SubtilinReceiver_spaRK_separated’ within the ‘bsu’ collection in <a href="https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1" class="external-link">SynBioHub</a><br>
+</li>
+<li>Have a look at the proteomics record ‘PXD013039’ in <a href="https://www.ebi.ac.uk/pride/archive/projects/PXD013039" class="external-link">PRIDE</a><br>
+</li>
+<li>Have a look at the metabolomics record ‘MTBLS2289’ in <a href="https://www.ebi.ac.uk/metabolights/MTBLS2289/descriptors" class="external-link">Metabolights</a><br>
+</li>
+<li>Have a look at the scripts deposit ‘RNA-Seq-validation’ in <a href="https://github.com/PauloFlores/RNA-Seq-validation" class="external-link">GitHub</a>
+</li>
+</ul>
+<p>Report to the group, what advantages can you see in using a specific
+repository over a generalist repository like Zenodo.</p>
 </div>
 </div>
 </div>
@@ -2993,43 +3744,172 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<p>Some advantages are:</p>
+<ul>
+<li>The repository is more relevant to your discipline than a generalist
+one.</li>
+<li>Higher exposure (people looking for those specific types of data
+will usually first look at the specific repository).</li>
+<li>Higher number of citations (see above).</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-</section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</section><section id="how-do-we-choose-a-research-data-repository"><h2 class="section-heading">How do we choose a research data repository?<a class="anchor" aria-label="anchor" href="#how-do-we-choose-a-research-data-repository"></a>
 </h2>
 <hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<p>(3 min teaching) As a general rule, your research needs to be
+deposited in discipline/data specific repository. If no specific
+repository can be found, then you can use a generalist repository.
+Having said this, there are tons of data repositories to choose from.
+Choosing one can be time consuming and challenging as well. So how do
+you go about finding a repository:</p>
+<ul>
+<li>Check the publisher’s / funder’ recommended list of repositories,
+some of which can be found below:
+<ul>
+<li><a href="https://www.springernature.com/gp/authors/research-data-policy/recommended-repositories" class="external-link">BioMed
+Central / Springer Nature</a></li>
+<li><a href="https://submit.elifesciences.org/html/elife_author_instructions.html#policies" class="external-link">eLife</a></li>
+<li><a href="https://www.elsevier.com/about/policies/research-data" class="external-link">Elsevier</a></li>
+<li><a href="https://www.embopress.org/page/journal/14602075/authorguide#datadeposition" class="external-link">EMBO
+Press</a></li>
+<li><a href="https://f1000research.com/for-authors/data-guidelines" class="external-link">F1000
+Research</a></li>
+<li><a href="https://academic.oup.com/gigascience/pages/instructions_to_authors" class="external-link">GIGAscience
+- OUP</a></li>
+<li><a href="https://journals.plos.org/plosbiology/s/recommended-repositories" class="external-link">PLoS</a></li>
+<li><a href="https://www.nature.com/sdata/policies/repositories" class="external-link">Scientific
+Data - Nature</a></li>
+<li><a href="https://authorservices.taylorandfrancis.com/data-sharing-policies/repositories/" class="external-link">Taylor
+and Francis</a></li>
+<li><a href="https://bbsrc.ukri.org/research/resources/" class="external-link">BBSRC</a></li>
+<li><a href="https://nerc.ukri.org/research/sites/environmental-data-service-eds/policy/" class="external-link">NERC</a></li>
+<li><a href="https://royalsociety.org/journals/ethics-policies/data-sharing-mining/" class="external-link">Royal
+Society</a></li>
+<li><a href="https://wellcomeopenresearch.org/for-authors/data-guidelines" class="external-link">Wellcome
+Open Research</a></li>
+</ul>
+</li>
+<li>Check <a href="https://fairsharing.org/recommendations/?q=" class="external-link">Fairsharing
+recommendations</a>
+</li>
+<li>or check the <a href="https://www.re3data.org/" class="external-link">Registry of research
+data repositories - re3data</a>
+</li>
+</ul>
+<div id="exercise-4-finding-a-repository-5-min-2-min-discussion." class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<div id="exercise-4-finding-a-repository-5-min-2-min-discussion." class="callout-inner">
+<h3 class="callout-title">Exercise 4: Finding a repository (5 min + 2
+min discussion).<a class="anchor" aria-label="anchor" href="#exercise-4-finding-a-repository-5-min-2-min-discussion."></a>
 </h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Using Fairsharing (<a href="https://fairsharing.org/" class="external-link uri">https://fairsharing.org/</a>) find a repo for flow
+cytometry</li>
+<li>once done, search for repository for genomics data.</li>
+</ol>
+<p>Note to instructor: Fairsharing gives few options, people may give
+different answer follow up why they selected particular ones.</p>
 </div>
 </div>
 </div>
-</section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<ol style="list-style-type: lower-alpha">
+<li>FlowRepository<br>
+</li>
+<li>GEO/SRA and ENA/ArrayExpress are good examples. Interestingly these
+repositories do not issue a DOI.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<p>(6 min teaching)</p>
+<p>A list of UoE BioRDM’s recommended data repositories can be found <a href="https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories" class="external-link">here</a>.</p>
+</section><section id="what-comes-first-the-repository-or-the-metadata"><h2 class="section-heading">What comes first? the repository or the metadata?<a class="anchor" aria-label="anchor" href="#what-comes-first-the-repository-or-the-metadata"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
+<p>Finding a repository first may help in deciding what metadata to
+collect and how!</p>
+</section><section id="extra-features"><h2 class="section-heading">Extra features<a class="anchor" aria-label="anchor" href="#extra-features"></a>
+</h2>
+<hr class="half-width">
+<p>It is also worth considering that some repositories offer extra
+features, such as running simulations or providing visualisation. For
+example, <a href="https://fairdomhub.org/" class="external-link">FAIRDOMhub</a> can run model
+simulations and has project structures. Do not forget to take this into
+account when choosing your repository. Extra features might come in
+handy.</p>
+</section><section id="can-github-be-cited"><h2 class="section-heading">Can GitHub be cited?<a class="anchor" aria-label="anchor" href="#can-github-be-cited"></a>
+</h2>
+<hr class="half-width">
+<p>As github is a tool for version controll and life code, it may not
+alway match the version of the code which was described in a
+publication.</p>
+<p>To solve this issue you should create a snapshot of your repository
+and deposit it in a general repository to obtain a DOI.</p>
+<p>For example, Zenodo can automatically integrate with github and
+create a new deposit for each of your releases.</p>
+</section><section id="evaluating-a-research-data-repository"><h2 class="section-heading">Evaluating a research data repository<a class="anchor" aria-label="anchor" href="#evaluating-a-research-data-repository"></a>
+</h2>
+<hr class="half-width">
+<p>You can evaluate the repositories by following this criteria:</p>
+<ul>
+<li>who is behind it, what is its funding</li>
+<li>quality of interaction: is the interaction for purposes of data
+deposit or reuse efficient, effective and satisfactory for you?</li>
+<li>take-up and impact: what can I put in it? Is anyone else using it?
+Will others be able to find stuff deposited in it? Is the repository
+linked to other data repositories so I don’t have to search tehre as
+well? Can anyone reuse the data? Can others cite the data, and will
+depositing boost citations to related papers?<br>
+</li>
+<li>policy and process: does it help you meet community standards of
+good practice and comply with policies stipulating data deposit?</li>
+</ul>
+<p>An interesting take can be found at Peter Murray-Rust’s blog post <a href="https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/" class="external-link">Criteria
+for succesful repositories</a>.</p>
+<div id="exercise-5-wrap-up-discussion-5-min." class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-5-wrap-up-discussion-5-min." class="callout-inner">
+<h3 class="callout-title">Exercise 5: Wrap up discussion (5 min).<a class="anchor" aria-label="anchor" href="#exercise-5-wrap-up-discussion-5-min."></a>
+</h3>
+<div class="callout-content">
+<p>Discuss the following questions:</p>
+<ul>
+<li>Why is choosing a domain specific repositories over zenodo more
+FAIR?</li>
+<li>How can selecting a repository for your data as soon as you do an
+experiment (or even before!) benefit your research and help your data
+become FAIR?</li>
+<li>What is your favourite research data repository? Why?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co">## Attribution</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">Content</span> of this episode was adapted or inspired by:.</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">-</span> [FAIR principles]<span class="er">(</span><span class="ex">https://www.go-fair.org/fair-principles/</span><span class="kw">)</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">-</span> [BioRDM suggested data repositories]<span class="er">(</span><span class="ex">https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories</span><span class="kw">)</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">-</span> [DCC <span class="at">-</span> How can we evaluate data repositories<span class="pp">?</span>]<span class="er">(</span><span class="ex">https://www.dcc.ac.uk/news/how-can-we-evaluate-data-repositories-pointers-dryaduk</span><span class="kw">)</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="ex">-</span> [Criteria for succesful repositories]<span class="er">(</span><span class="ex">https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/</span><span class="kw">)</span></span></code></pre>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -3039,14 +3919,221 @@ this:</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Repositories are the main means for sharing research data.</li>
+<li>You should use data-type specific repository whenever possible.</li>
+<li>Repositories are the key players in data reuse.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-07-journey-to-FAIR"><p>Content from <a href="07-journey-to-FAIR.html">Journey to be FAIR</a></p>
+<hr>
+<p>Last updated on 2024-03-22 |
+        
+        <a href="https://github.com/BioRDM/fair-for-busy-biologists/edit/main/episodes/07-journey-to-FAIR.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What will your journey to be FAIR productive entail?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Discuss steps and changes in your habits you will take after this
+course</li>
+<li>List of resources that will help you achieve these goals</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="better-research-by-better-sharing"><h2 class="section-heading">Better research by better sharing<a class="anchor" aria-label="anchor" href="#better-research-by-better-sharing"></a>
+</h2>
+<hr class="half-width">
+<p>For many of us, data management or output sharing in general are
+considered a burden rather than a useful activity. Part of the problem
+is our bad timing and lack of planning.</p>
+<p><strong>Data management is a continuous process</strong></p>
+<p><img src="./fig/01-sharing_as_part_of_workflow.jpg" alt="Figure 5.2. Sharing as part of the workflow" class="figure"><em>Figure credits:
+Tomasz Zielinski and Andrés Romanowski</em></p>
+<p>When should you engage in data sharing and open practices?</p>
+<ul>
+<li>Data management should be done throughout the duration of your
+project.</li>
+<li>If you wait till the end, it will take a massive effort on your side
+and will be more of a burden than a benefit.</li>
+<li>The overheads of making data suitable for sharing at each stage of
+data life-cycle are small comparing to the other actions involved</li>
+<li>Taking the time to do effective data management will help you
+understand your data better and make it easier to find when you need it
+(for example when you need to write a manuscript or a thesis!).</li>
+<li>All the practices that enable others to access and use your outcomes
+directly benefit you and your group</li>
+</ul>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+</h3>
+<div class="callout-content">
+<p>Exercise 1. Knowledge gap</p>
+<p>Read through the following activities / practices, type next to each
+-1 if you do not perform it ? if you are not completely sure what it
+stands for 0 if you only learnt about it at this workshop +1 if you
+adheres / practices it</p>
+<ul>
+<li>Include a license with datasets.</li>
+<li>Include a license with code/scripts.</li>
+<li>Use Git for version control.</li>
+<li>Create DOIs for datasets and code.</li>
+<li>Add a “Date Availability” section to a manuscript.</li>
+<li>Use minimal information standards.</li>
+<li>Use a generic data repository.</li>
+<li>Use a domain-specific data repository.</li>
+<li>Develop description templates for various lab techniques.</li>
+<li>Store data on a shared network drive.</li>
+<li>Implement an automatic backup solution for files.</li>
+<li>Follow a consistent file naming convention.</li>
+<li>Create a standard project folder structure.</li>
+<li>Use electronic lab notebooks.</li>
+<li>Create figures and plots in Python or R.</li>
+<li>Select a data repository.</li>
+<li>Be familiar with non-restrictive licenses.</li>
+<li>Create a README file for each dataset.</li>
+<li>Utilize controlled vocabularies.</li>
+<li>Obtain an ORCID identifier.</li>
+<li>Maintain a dedicated folder or database for protocols and SOPs.</li>
+<li>Establish a system for referencing different versions of
+protocols.</li>
+<li>Adhere to conventions for tidy data tables.**</li>
+<li>Use Jupyter Notebooks or R Markdown.</li>
+<li>Include PIDs (e.g., UniProt, GenBank) in the data description.</li>
+<li>Use a database for biosamples, strains, etc.</li>
+<li>Grant yourself access to all group data from your personal computer
+(optional).</li>
+<li>Utilize the data management tools and resources offered by your
+organization.</li>
+<li>Seek support from your organization for data management.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ul>
+<li>Try to find out about all the actions you were not familiar
+with</li>
+<li>revisit your -1 practices and decide if not to change them to 1</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-1-your-journey-to-be-fairproductive" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-1-your-journey-to-be-fairproductive" class="callout-inner">
+<h3 class="callout-title">Exercise 1: Your journey to be
+FAIRproductive<a class="anchor" aria-label="anchor" href="#exercise-1-your-journey-to-be-fairproductive"></a>
+</h3>
+<div class="callout-content">
+<p>What are the things you are going to change in your work habits, or
+actions you are going to take after this course?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Some good actions to take:</p>
+<ul>
+<li>For each paper I publish I will make a Zenodo deposit with all the
+data files</li>
+<li>I will use GitHub for all my code instead of using folders</li>
+<li>I will start using ELNs</li>
+<li>Write a data management plan for my project</li>
+<li>Reorganise my folder structure</li>
+<li>Use templates</li>
+<li>Start using readme files (make a readme template)</li>
+<li>Write protocols on protocols.io</li>
+<li>Back up my data accordingly</li>
+<li>Think as a user of my data instead of just a creator</li>
+<li>Start using Jupyter notebooks, or RMarkdown to describe analysis
+workflows</li>
+<li>Write intelligible metadata</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="resources" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="resources" class="callout-inner">
+<h3 class="callout-title">Resources<a class="anchor" aria-label="anchor" href="#resources"></a>
+</h3>
+<div class="callout-content">
+<p>The full version of this course: <a href="https://carpentries-incubator.github.io/fair-bio-practice/" class="external-link">FAIR
+in (bio) practice</a></p>
+<p>The BioRDM team has a lot of materials on their <a href="https://www.wiki.ed.ac.uk/display/RDMS/" class="external-link">BioRDM wiki</a>.</p>
+<p>Practical recipes and interactive guides:</p>
+<ul>
+<li><a href="https://faircookbook.elixir-europe.org/" class="external-link uri">https://faircookbook.elixir-europe.org/</a></li>
+<li><a href="https://rdmkit.elixir-europe.org/" class="external-link uri">https://rdmkit.elixir-europe.org/</a></li>
+</ul>
+<p>Finding resources for example repositories or standards</p>
+<ul>
+<li><a href="https://fairsharing.org/" class="external-link uri">https://fairsharing.org/</a></li>
+<li><a href="https://www.re3data.org/" class="external-link uri">https://www.re3data.org/</a></li>
+<li>BioRDM wiki</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>There are simple steps to help make your data more FAIR throughout
+the research data lifecycle</li>
+<li>Implement these steps throughout to keep track of your data and
+changes</li>
 </ul>
 </div>
 </div>
@@ -3102,9 +4189,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://BioRDM.github.io/fair-for-busy-biologists/aio.html",
   "identifier": "https://BioRDM.github.io/fair-for-busy-biologists/aio.html",
-  "dateCreated": "2024-02-29",
-  "dateModified": "2024-03-19",
-  "datePublished": "2024-03-19"
+  "dateCreated": "2024-03-22",
+  "dateModified": "2024-03-22",
+  "datePublished": "2024-03-22"
 }
 
   </script><script>
